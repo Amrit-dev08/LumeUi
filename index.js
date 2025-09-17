@@ -1,0 +1,6 @@
+import './src/components/LumeButton.js'
+import './src/components/LumeNavbar.js'
+import './src/components/LumeHero.js'
+import './src/components/LumeArticle.js'
+import './src/components/LumeForm.js'
+import './src/components/LumeFooter.js'
