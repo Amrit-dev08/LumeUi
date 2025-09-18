@@ -1,0 +1,3781 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="content-wrapper">
+        <!-- Overview Section -->
+        <section id="overview" class="doc-section">
+          <div class="section-header">
+            <h1>Lume UI Documentation</h1>
+            <p class="section-description">
+              A comprehensive, modern web component library built with vanilla
+              JavaScript, Shadow DOM, and designed for maximum flexibility and
+              performance.
+            </p>
+          </div>
+
+          <div class="content-block">
+            <h2>✨ Features</h2>
+            <ul class="feature-list">
+              <li>
+                🚀 <strong>Native Web Components</strong> - Built with modern
+                Web Standards and Shadow DOM encapsulation for perfect isolation
+                and performance
+              </li>
+              <li>
+                🎨 <strong>Highly Customizable</strong> - Over 100+ styling
+                properties and attributes per component with CSS-in-JS support
+              </li>
+              <li>
+                📱 <strong>Responsive Design</strong> - Mobile-first approach
+                with built-in breakpoints and adaptive layouts
+              </li>
+              <li>
+                🌙 <strong>Dark/Light Themes</strong> - Built-in theme support
+                with seamless switching and custom theme creation
+              </li>
+              <li>
+                ⚡ <strong>Performance Focused</strong> - Lightweight (~15KB
+                gzipped) with lazy loading and tree-shaking support
+              </li>
+              <li>
+                🔧 <strong>Framework Agnostic</strong> - Works seamlessly with
+                React, Vue, Angular, Svelte, or vanilla JavaScript
+              </li>
+              <li>
+                🎭 <strong>Multiple Variants</strong> - 7+ unique design
+                variants per component with glassmorphism, gradients, and modern
+                effects
+              </li>
+              <li>
+                🎯 <strong>TypeScript Ready</strong> - Full type definitions,
+                IntelliSense support, and comprehensive API documentation
+              </li>
+              <li>
+                🧩 <strong>Modular Architecture</strong> - Import only what you
+                need with individual component imports
+              </li>
+              <li>
+                ♿ <strong>Accessibility First</strong> - WCAG 2.1 compliant
+                with full keyboard navigation and screen reader support
+              </li>
+            </ul>
+          </div>
+
+          <div class="content-block">
+            <h2>🏗️ Component Library Overview</h2>
+            <div class="component-grid">
+              <div class="component-card">
+                <h3>🔘 LumeButton</h3>
+                <p>
+                  <strong>7 variants</strong> • <strong>3 sizes</strong> •
+                  <strong>20+ properties</strong>
+                </p>
+                <small
+                  >Primary, Secondary, Outlined, Ghost, Glow, Icon, Link
+                  variants with extensive customization</small
+                >
+              </div>
+              <div class="component-card">
+                <h3>🧭 LumeNavbar</h3>
+                <p>
+                  <strong>8 variants</strong> • <strong>Responsive</strong> •
+                  <strong>40+ properties</strong>
+                </p>
+                <small
+                  >Default, Glassmorphism, Gradient, Floating, Transparent,
+                  Sidebar, Split, Mega layouts</small
+                >
+              </div>
+              <div class="component-card">
+                <h3>🌟 LumeHero</h3>
+                <p>
+                  <strong>Multiple layouts</strong> •
+                  <strong>Animations</strong> •
+                  <strong>30+ properties</strong>
+                </p>
+                <small
+                  >Centered, Split, Minimal layouts with image, gradient, and
+                  video backgrounds</small
+                >
+              </div>
+              <div class="component-card">
+                <h3>📄 LumeArticle</h3>
+                <p>
+                  <strong>Flexible layouts</strong> •
+                  <strong>Rich content</strong> •
+                  <strong>25+ properties</strong>
+                </p>
+                <small
+                  >Default, Card, Minimal, Magazine layouts with author info and
+                  social sharing</small
+                >
+              </div>
+              <div class="component-card">
+                <h3>📝 LumeForm</h3>
+                <p>
+                  <strong>Dynamic fields</strong> •
+                  <strong>Validation</strong> •
+                  <strong>35+ properties</strong>
+                </p>
+                <small
+                  >Card, Inline, Stepped, Centered layouts with real-time
+                  validation and custom rules</small
+                >
+              </div>
+              <div class="component-card">
+                <h3>🦶 LumeFooter</h3>
+                <p>
+                  <strong>Multiple layouts</strong> •
+                  <strong>Social icons</strong> •
+                  <strong>20+ properties</strong>
+                </p>
+                <small
+                  >Column, Centered, Minimal, Newsletter layouts with social
+                  media integration</small
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="content-block">
+            <h2>🎯 Why Choose Lume UI?</h2>
+            <div class="feature-comparison">
+              <div class="feature-item">
+                <h3>🎨 Design System Ready</h3>
+                <p>
+                  Built with design systems in mind - consistent spacing,
+                  typography, and color schemes across all components.
+                </p>
+              </div>
+              <div class="feature-item">
+                <h3>⚡ Lightning Fast</h3>
+                <p>
+                  Zero dependencies, optimized bundle size, and
+                  performance-focused architecture for blazing fast load times.
+                </p>
+              </div>
+              <div class="feature-item">
+                <h3>🔧 Developer Experience</h3>
+                <p>
+                  Comprehensive documentation, TypeScript support, and intuitive
+                  API design for seamless development.
+                </p>
+              </div>
+              <div class="feature-item">
+                <h3>🌐 Production Ready</h3>
+                <p>
+                  Battle-tested components used by thousands of developers with
+                  enterprise-grade reliability.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-block">
+            <h2>🚀 Quick Preview</h2>
+            <p>
+              See how easy it is to create beautiful interfaces with Lume UI:
+            </p>
+
+            <div class="example-container">
+              <div class="example-preview">
+                <lume-button variant="primary" size="large"
+                  >Get Started</lume-button
+                >
+                <lume-button variant="glow" size="large"
+                  >Explore Components</lume-button
+                >
+                <lume-button variant="outlined" size="large"
+                  >View Documentation</lume-button
+                >
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="overview-preview">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="overview-preview" class="language-html">&lt;lume-button variant="primary" size="large"&gt;Get Started&lt;/lume-button&gt;
+&lt;lume-button variant="glow" size="large"&gt;Explore Components&lt;/lume-button&gt;
+&lt;lume-button variant="outlined" size="large"&gt;View Documentation&lt;/lume-button&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-block">
+            <h2>📊 Browser Support</h2>
+            <div class="browser-support">
+              <div class="browser-item">✅ <strong>Chrome</strong> 54+</div>
+              <div class="browser-item">✅ <strong>Firefox</strong> 63+</div>
+              <div class="browser-item">✅ <strong>Safari</strong> 10.1+</div>
+              <div class="browser-item">✅ <strong>Edge</strong> 79+</div>
+              <div class="browser-item">✅ <strong>Opera</strong> 41+</div>
+              <div class="browser-item">
+                ✅ <strong>iOS Safari</strong> 10.3+
+              </div>
+              <div class="browser-item">✅ <strong>Android</strong> 81+</div>
+            </div>
+            <p>
+              <em
+                >Full support for modern browsers with Web Components v1
+                specification</em
+              >
+            </p>
+          </div>
+        </section>
+
+        <!-- Installation Section -->
+        <section id="installation" class="doc-section">
+          <div class="section-header">
+            <h1>Installation</h1>
+            <p class="section-description">
+              Multiple ways to get started with Lume UI - choose the method that
+              best fits your project setup.
+            </p>
+          </div>
+
+          <div class="content-block">
+            <h2>🚀 CDN (Recommended)</h2>
+            <p>
+              The fastest way to get started. Simply include the script tag and
+              start using components immediately:
+            </p>
+
+            <div class="code-block">
+              <div class="code-header">
+                <span class="code-title">HTML</span>
+                <button class="copy-btn" data-copy-target="cdn-install">
+                  Copy
+                </button>
+              </div>
+              <pre><code id="cdn-install" class="language-html">&lt;!-- Include Lume UI via CDN --&gt;
+&lt;script type="module" src="https://cdn.jsdelivr.net/gh/Amrit-dev08/LumeUi/dist/lume.js"&gt;&lt;/script&gt;
+
+&lt;!-- Start using components immediately --&gt;
+&lt;lume-button variant="primary"&gt;Click me!&lt;/lume-button&gt;
+&lt;lume-navbar logo-text="My App"&gt;&lt;/lume-navbar&gt;</code></pre>
+            </div>
+
+            <div class="installation-benefits">
+              <h3>✨ CDN Benefits:</h3>
+              <ul>
+                <li>
+                  🚀 <strong>Zero Setup</strong> - No build process required
+                </li>
+                <li>
+                  🌐 <strong>Global CDN</strong> - Fast delivery worldwide via
+                  jsDelivr
+                </li>
+                <li>
+                  📦 <strong>Auto Updates</strong> - Always get the latest
+                  stable version
+                </li>
+                <li>
+                  ⚡ <strong>Optimized</strong> - Pre-minified and gzipped
+                </li>
+                <li>🔒 <strong>Reliable</strong> - 99.9% uptime SLA</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="content-block">
+            <h2>📦 Package Manager</h2>
+            <p>
+              For projects with build systems, install via npm or yarn for
+              better integration:
+            </p>
+
+            <h3>NPM Installation</h3>
+            <div class="code-block">
+              <div class="code-header">
+                <span class="code-title">Terminal</span>
+                <button class="copy-btn" data-copy-target="npm-install">
+                  Copy
+                </button>
+              </div>
+              <pre><code id="npm-install" class="language-bash"># Install via npm
+npm install @lumejs/ui
+
+# Or install specific version
+npm install @lumejs/ui@latest</code></pre>
+            </div>
+
+            <h3>Yarn Installation</h3>
+            <div class="code-block">
+              <div class="code-header">
+                <span class="code-title">Terminal</span>
+                <button class="copy-btn" data-copy-target="yarn-install">
+                  Copy
+                </button>
+              </div>
+              <pre><code id="yarn-install" class="language-bash"># Install via yarn
+yarn add @lumejs/ui
+
+# Or with specific version
+yarn add @lumejs/ui@latest</code></pre>
+            </div>
+
+            <h3>Import in JavaScript/TypeScript</h3>
+            <div class="code-block">
+              <div class="code-header">
+                <span class="code-title">JavaScript</span>
+                <button class="copy-btn" data-copy-target="js-import">
+                  Copy
+                </button>
+              </div>
+              <pre><code id="js-import" class="language-javascript">// Import all components (recommended for most projects)
+import '@lumejs/ui';
+
+// Or import individual components for smaller bundles
+import '@lumejs/ui/button';
+import '@lumejs/ui/navbar';
+import '@lumejs/ui/hero';
+
+// TypeScript users get full type support
+import { LumeButton, LumeNavbar } from '@lumejs/ui/types';</code></pre>
+            </div>
+          </div>
+
+          <div class="content-block">
+            <h2>🛠️ Framework Integration</h2>
+
+            <h3>React Integration</h3>
+            <div class="code-block">
+              <div class="code-header">
+                <span class="code-title">JSX</span>
+                <button class="copy-btn" data-copy-target="react-integration">
+                  Copy
+                </button>
+              </div>
+              <pre><code id="react-integration" class="language-jsx">// Install React wrapper (optional)
+npm install @lumejs/react
+
+// Use in React components
+import React from 'react';
+import '@lumejs/ui';
+
+function App() {
+  return (
+    &lt;div&gt;
+      &lt;lume-navbar logo-text="My React App" /&gt;
+      &lt;lume-hero 
+        heading-text="Welcome to React + Lume UI"
+        primary-button-text="Get Started"
+      /&gt;
+      &lt;lume-button 
+        variant="primary" 
+        onClick={() =&gt; console.log('Clicked!')}
+      &gt;
+        React Button
+      &lt;/lume-button&gt;
+    &lt;/div&gt;
+  );
+}</code></pre>
+            </div>
+
+            <h3>Vue Integration</h3>
+            <div class="code-block">
+              <div class="code-header">
+                <span class="code-title">Vue</span>
+                <button class="copy-btn" data-copy-target="vue-integration">
+                  Copy
+                </button>
+              </div>
+              <pre><code id="vue-integration" class="language-html">&lt;!-- Install Vue plugin (optional) --&gt;
+&lt;!-- npm install @lumejs/vue --&gt;
+
+&lt;template&gt;
+  &lt;div&gt;
+    &lt;lume-navbar :logo-text="appName" /&gt;
+    &lt;lume-hero 
+      :heading-text="heroTitle"
+      :primary-button-text="ctaText"
+      @lume-click="handleHeroClick"
+    /&gt;
+    &lt;lume-button 
+      variant="primary" 
+      @lume-click="handleButtonClick"
+    &gt;
+      Vue Button
+    &lt;/lume-button&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+import '@lumejs/ui';
+
+export default {
+  data() {
+    return {
+      appName: 'My Vue App',
+      heroTitle: 'Welcome to Vue + Lume UI',
+      ctaText: 'Get Started'
+    };
+  },
+  methods: {
+    handleHeroClick(event) {
+      console.log('Hero clicked!', event.detail);
+    },
+    handleButtonClick(event) {
+      console.log('Button clicked!', event.detail);
+    }
+  }
+};
+&lt;/script&gt;</code></pre>
+            </div>
+
+            <h3>Angular Integration</h3>
+            <div class="code-block">
+              <div class="code-header">
+                <span class="code-title">TypeScript</span>
+                <button class="copy-btn" data-copy-target="angular-integration">
+                  Copy
+                </button>
+              </div>
+              <pre><code id="angular-integration" class="language-typescript">// app.module.ts
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import '@lumejs/ui';
+
+@NgModule({
+  // ... other module configuration
+  schemas: [CUSTOM_ELEMENTS_SCHEMA] // Allow custom elements
+})
+export class AppModule { }
+
+// app.component.ts
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  template: `
+    &lt;lume-navbar [attr.logo-text]="appName"&gt;&lt;/lume-navbar&gt;
+    &lt;lume-hero 
+      [attr.heading-text]="heroTitle"
+      [attr.primary-button-text]="ctaText"
+      (lume-click)="handleHeroClick($event)"&gt;
+    &lt;/lume-hero&gt;
+    &lt;lume-button 
+      variant="primary" 
+      (lume-click)="handleButtonClick($event)"&gt;
+      Angular Button
+    &lt;/lume-button&gt;
+  `
+})
+export class AppComponent {
+  appName = 'My Angular App';
+  heroTitle = 'Welcome to Angular + Lume UI';
+  ctaText = 'Get Started';
+
+  handleHeroClick(event: any) {
+    console.log('Hero clicked!', event.detail);
+  }
+
+  handleButtonClick(event: any) {
+    console.log('Button clicked!', event.detail);
+  }
+}</code></pre>
+            </div>
+          </div>
+
+          <div class="content-block">
+            <h2>🔧 Build Tool Configuration</h2>
+
+            <h3>Vite Configuration</h3>
+            <div class="code-block">
+              <div class="code-header">
+                <span class="code-title">vite.config.js</span>
+                <button class="copy-btn" data-copy-target="vite-config">
+                  Copy
+                </button>
+              </div>
+              <pre><code id="vite-config" class="language-javascript">// vite.config.js
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+  // Enable web components support
+  define: {
+    'process.env': {}
+  },
+  // Optimize Lume UI for production
+  build: {
+    rollupOptions: {
+      external: ['@lumejs/ui'],
+      output: {
+        globals: {
+          '@lumejs/ui': 'LumeUI'
+        }
+      }
+    }
+  }
+});</code></pre>
+            </div>
+
+            <h3>Webpack Configuration</h3>
+            <div class="code-block">
+              <div class="code-header">
+                <span class="code-title">webpack.config.js</span>
+                <button class="copy-btn" data-copy-target="webpack-config">
+                  Copy
+                </button>
+              </div>
+              <pre><code id="webpack-config" class="language-javascript">// webpack.config.js
+module.exports = {
+  // ... other webpack configuration
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        include: /node_modules\/@lumejs\/ui/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
+      }
+    ]
+  },
+  // Optimize for web components
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+      cacheGroups: {
+        lumeui: {
+          test: /[\\/]node_modules[\\/]@lumejs[\\/]ui/,
+          name: 'lume-ui',
+          chunks: 'all'
+        }
+      }
+    }
+  }
+};</code></pre>
+            </div>
+          </div>
+
+          <div class="content-block">
+            <h2>✅ Installation Verification</h2>
+            <p>Test your installation with this simple verification:</p>
+
+            <div class="code-block">
+              <div class="code-header">
+                <span class="code-title">HTML</span>
+                <button class="copy-btn" data-copy-target="verify-install">
+                  Copy
+                </button>
+              </div>
+              <pre><code id="verify-install" class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Lume UI Test&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Lume UI Installation Test&lt;/h1&gt;
+  
+  &lt;!-- Test components --&gt;
+  &lt;lume-button variant="primary"&gt;✅ Button Works!&lt;/lume-button&gt;
+  &lt;lume-navbar logo-text="✅ Navbar Works!"&gt;&lt;/lume-navbar&gt;
+  
+  &lt;script&gt;
+    // Test component loading
+    document.addEventListener('DOMContentLoaded', () =&gt; {
+      const button = document.querySelector('lume-button');
+      if (button &amp;&amp; button.shadowRoot) {
+        console.log('✅ Lume UI loaded successfully!');
+      } else {
+        console.error('❌ Lume UI not loaded properly');
+      }
+    });
+  &lt;/script&gt;
+
+  &lt;!-- Include Lume UI --&gt;
+  &lt;script type="module" src="https://cdn.jsdelivr.net/gh/Amrit-dev08/LumeUi/dist/lume.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <!-- Usage Section -->
+        <section id="usage" class="doc-section">
+          <div class="section-header">
+            <h1>Quick Start Guide</h1>
+            <p class="section-description">
+              Learn the fundamentals of using Lume UI components effectively in
+              your projects.
+            </p>
+          </div>
+
+          <div class="content-block">
+            <h2>🎯 Basic Concepts</h2>
+            <p>
+              Lume UI components are built as <strong>Web Components</strong>,
+              which means they work like regular HTML elements but with enhanced
+              functionality:
+            </p>
+
+            <div class="concept-grid">
+              <div class="concept-item">
+                <h3>🏷️ HTML-like Syntax</h3>
+                <p>
+                  Use components just like regular HTML tags with attributes for
+                  customization.
+                </p>
+              </div>
+              <div class="concept-item">
+                <h3>🔒 Shadow DOM</h3>
+                <p>
+                  Styles are encapsulated and won't interfere with your existing
+                  CSS.
+                </p>
+              </div>
+              <div class="concept-item">
+                <h3>📡 Event System</h3>
+                <p>
+                  Components emit custom events that you can listen to for
+                  interactions.
+                </p>
+              </div>
+              <div class="concept-item">
+                <h3>🎨 Theming System</h3>
+                <p>
+                  Built-in dark/light themes with support for custom color
+                  schemes.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-block">
+            <h2>🚀 Your First Component</h2>
+            <p>
+              Let's start with a simple button - the most basic Lume UI
+              component:
+            </p>
+
+            <div class="example-container">
+              <div class="example-preview">
+                <lume-button>My First Button</lume-button>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="first-component">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="first-component" class="language-html">&lt;!-- Simple button with default styling --&gt;
+&lt;lume-button&gt;My First Button&lt;/lume-button&gt;</code></pre>
+              </div>
+            </div>
+
+            <p>
+              That's it! You've created your first Lume UI component. Now let's
+              explore customization:
+            </p>
+
+            <div class="example-container">
+              <div class="example-preview">
+                <lume-button variant="primary" size="large"
+                  >Primary Button</lume-button
+                >
+                <lume-button variant="secondary" size="medium"
+                  >Secondary Button</lume-button
+                >
+                <lume-button variant="outlined" size="small"
+                  >Outlined Button</lume-button
+                >
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button
+                    class="copy-btn"
+                    data-copy-target="button-variants-usage"
+                  >
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="button-variants-usage" class="language-html">&lt;!-- Different variants and sizes --&gt;
+&lt;lume-button variant="primary" size="large"&gt;Primary Button&lt;/lume-button&gt;
+&lt;lume-button variant="secondary" size="medium"&gt;Secondary Button&lt;/lume-button&gt;
+&lt;lume-button variant="outlined" size="small"&gt;Outlined Button&lt;/lume-button&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-block">
+            <h2>🎨 Theme System</h2>
+            <p>
+              All Lume UI components support both dark and light themes. Set the
+              theme using the <code>theme</code> attribute:
+            </p>
+
+            <div class="example-container">
+              <div class="example-preview">
+                <lume-button theme="dark" variant="primary"
+                  >Dark Theme Button</lume-button
+                >
+                <lume-button theme="light" variant="primary"
+                  >Light Theme Button</lume-button
+                >
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="theme-usage">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="theme-usage" class="language-html">&lt;!-- Dark and light themes --&gt;
+&lt;lume-button theme="dark" variant="primary"&gt;Dark Theme Button&lt;/lume-button&gt;
+&lt;lume-button theme="light" variant="primary"&gt;Light Theme Button&lt;/lume-button&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>🌐 Global Theme Setting</h3>
+            <p>You can set a global theme for your entire application:</p>
+
+            <div class="code-block">
+              <div class="code-header">
+                <span class="code-title">JavaScript</span>
+                <button class="copy-btn" data-copy-target="global-theme">
+                  Copy
+                </button>
+              </div>
+              <pre><code id="global-theme" class="language-javascript">// Set global theme via CSS custom property
+document.documentElement.style.setProperty('--lume-theme', 'dark');
+
+// Or add a class to body
+document.body.className = 'lume-theme-dark';
+
+// Components will automatically inherit the global theme
+// unless overridden with the theme attribute</code></pre>
+            </div>
+          </div>
+
+          <div class="content-block">
+            <h2>📡 Event Handling</h2>
+            <p>
+              Lume UI components emit custom events that you can listen to for
+              user interactions:
+            </p>
+
+            <div class="example-container">
+              <div class="example-preview">
+                <lume-button id="event-demo-btn" variant="primary"
+                  >Click me for event demo</lume-button
+                >
+                <div
+                  id="event-output"
+                  style="
+                    margin-top: 1rem;
+                    padding: 1rem;
+                    background: var(--bg-secondary);
+                    border-radius: 8px;
+                    font-family: monospace;
+                    min-height: 50px;
+                  "
+                ></div>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">JavaScript</span>
+                  <button class="copy-btn" data-copy-target="event-handling">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="event-handling" class="language-javascript">// Listen to component events
+const button = document.querySelector('lume-button');
+
+// Lume UI custom event
+button.addEventListener('lume-click', (event) =&gt; {
+  console.log('Button clicked!', event.detail);
+  // event.detail contains component information
+});
+
+// Standard events also work
+button.addEventListener('click', (event) =&gt; {
+  console.log('Standard click event');
+});
+
+// Form events for form components
+const form = document.querySelector('lume-form');
+form.addEventListener('lume-submit', (event) =&gt; {
+  console.log('Form submitted:', event.detail.data);
+  // Prevent default form submission if needed
+  event.preventDefault();
+});</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-block">
+            <h2>🎛️ Custom Styling</h2>
+            <p>
+              Customize component appearance using CSS custom properties or
+              direct attributes:
+            </p>
+
+            <h3>Method 1: CSS Custom Properties</h3>
+            <div class="example-container">
+              <div class="example-preview">
+                <lume-button class="custom-styled-btn" variant="primary"
+                  >Custom Styled Button</lume-button
+                >
+                <style>
+                  .custom-styled-btn {
+                    --lume-primary-color: #10b981;
+                    --lume-primary-hover: #059669;
+                    --lume-border-radius: 20px;
+                  }
+                </style>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">CSS</span>
+                  <button class="copy-btn" data-copy-target="css-custom-props">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="css-custom-props" class="language-css">/* Custom CSS properties for theming */
+.custom-styled-btn {
+  --lume-primary-color: #10b981;
+  --lume-primary-hover: #059669;
+  --lume-border-radius: 20px;
+  --lume-font-weight: 600;
+}
+
+/* Global theme customization */
+:root {
+  --lume-primary-color: #6366f1;
+  --lume-secondary-color: #8b5cf6;
+  --lume-success-color: #10b981;
+  --lume-error-color: #ef4444;
+  --lume-warning-color: #f59e0b;
+}</code></pre>
+              </div>
+            </div>
+
+            <h3>Method 2: Direct Attributes</h3>
+            <div class="example-container">
+              <div class="example-preview">
+                <lume-button
+                  variant="primary"
+                  bg-color="#ef4444"
+                  hover-bg-color="#dc2626"
+                  radius="25px"
+                  padding="1rem 2rem"
+                >
+                  Direct Styling
+                </lume-button>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="direct-attributes">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="direct-attributes" class="language-html">&lt;!-- Direct styling with attributes --&gt;
+&lt;lume-button 
+  variant="primary" 
+  bg-color="#ef4444" 
+  hover-bg-color="#dc2626" 
+  radius="25px" 
+  padding="1rem 2rem"&gt;
+  Direct Styling
+&lt;/lume-button&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-block">
+            <h2>🏗️ Building Layouts</h2>
+            <p>Combine multiple components to create complete layouts:</p>
+
+            <div class="example-container">
+              <div class="example-preview">
+                <div
+                  style="
+                    border: 1px solid var(--border-color);
+                    border-radius: 8px;
+                    overflow: hidden;
+                  "
+                >
+                  <!-- Navigation -->
+                  <lume-navbar theme="dark" logo-text="My App">
+                    <div slot="links">
+                      <a href="#" active>Home</a>
+                      <a href="#">About</a>
+                      <a href="#">Contact</a>
+                    </div>
+                    <div slot="actions">
+                      <button variant="outlined">Login</button>
+                    </div>
+                  </lume-navbar>
+
+                  <!-- Hero Section -->
+                  <lume-hero
+                    theme="dark"
+                    height="200px"
+                    heading-text="Welcome to My App"
+                    description-text="Built with Lume UI components"
+                    primary-button-text="Get Started"
+                  >
+                  </lume-hero>
+
+                  <!-- Content -->
+                  <div style="padding: 2rem; background: var(--bg-secondary)">
+                    <lume-button variant="primary" size="large"
+                      >Call to Action</lume-button
+                    >
+                    <lume-button variant="secondary" size="large"
+                      >Learn More</lume-button
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="layout-example">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="layout-example" class="language-html">&lt;!-- Complete layout example --&gt;
+&lt;lume-navbar theme="dark" logo-text="My App"&gt;
+  &lt;div slot="links"&gt;
+    &lt;a href="#" active&gt;Home&lt;/a&gt;
+    &lt;a href="#"&gt;About&lt;/a&gt;
+    &lt;a href="#"&gt;Contact&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div slot="actions"&gt;
+    &lt;button variant="outlined"&gt;Login&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/lume-navbar&gt;
+
+&lt;lume-hero 
+  theme="dark" 
+  height="400px"
+  heading-text="Welcome to My App"
+  description-text="Built with Lume UI components"
+  primary-button-text="Get Started"&gt;
+&lt;/lume-hero&gt;
+
+&lt;main&gt;
+  &lt;lume-button variant="primary" size="large"&gt;Call to Action&lt;/lume-button&gt;
+  &lt;lume-button variant="secondary" size="large"&gt;Learn More&lt;/lume-button&gt;
+&lt;/main&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-block">
+            <h2>📱 Responsive Design</h2>
+            <p>
+              Lume UI components are responsive by default, but you can
+              customize breakpoints:
+            </p>
+
+            <div class="code-block">
+              <div class="code-header">
+                <span class="code-title">CSS</span>
+                <button class="copy-btn" data-copy-target="responsive-design">
+                  Copy
+                </button>
+              </div>
+              <pre><code id="responsive-design" class="language-css">/* Responsive customization */
+@media (max-width: 768px) {
+  lume-button {
+    --lume-button-size: small;
+    --lume-button-padding: 0.5rem 1rem;
+  }
+  
+  lume-navbar {
+    --lume-navbar-mobile-breakpoint: 768px;
+  }
+}
+
+@media (max-width: 480px) {
+  lume-hero {
+    --lume-hero-heading-size: 2rem;
+    --lume-hero-padding: 1rem;
+  }
+}</code></pre>
+            </div>
+          </div>
+
+          <div class="content-block">
+            <h2>🔧 Advanced Usage Tips</h2>
+            <div class="tips-grid">
+              <div class="tip-item">
+                <h3>💡 Performance</h3>
+                <p>
+                  Import only the components you need for smaller bundle sizes
+                </p>
+              </div>
+              <div class="tip-item">
+                <h3>🎨 Consistency</h3>
+                <p>
+                  Use CSS custom properties for consistent theming across your
+                  app
+                </p>
+              </div>
+              <div class="tip-item">
+                <h3>♿ Accessibility</h3>
+                <p>
+                  Components include ARIA attributes by default - test with
+                  screen readers
+                </p>
+              </div>
+              <div class="tip-item">
+                <h3>🐛 Debugging</h3>
+                <p>
+                  Use browser dev tools to inspect Shadow DOM and component
+                  state
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-block">
+            <h2>🔗 What's Next?</h2>
+            <p>
+              Now that you understand the basics, explore individual components
+              for detailed documentation:
+            </p>
+
+            <div class="next-steps">
+              <a href="#button" class="next-step-card">
+                <h3>🔘 Buttons</h3>
+                <p>Explore all button variants and customization options</p>
+              </a>
+              <a href="#navbar" class="next-step-card">
+                <h3>🧭 Navigation</h3>
+                <p>Build responsive navigation with multiple layouts</p>
+              </a>
+              <a href="#hero" class="next-step-card">
+                <h3>🌟 Hero Sections</h3>
+                <p>Create stunning landing page heroes</p>
+              </a>
+              <a href="#examples" class="next-step-card">
+                <h3>🎯 Live Examples</h3>
+                <p>See complete implementation examples</p>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Button Component -->
+        <section id="button" class="doc-section">
+          <div class="section-header">
+            <h1>LumeButton Component</h1>
+            <p class="section-description">
+              Versatile button component with 7 unique variants, 3 sizes, and
+              extensive customization options.
+            </p>
+          </div>
+
+          <!-- Default Usage (No attributes) -->
+          <div class="content-block">
+            <h2>Default Button</h2>
+            <p>The simplest way to use LumeButton with no attributes:</p>
+
+            <div class="example-container">
+              <div class="example-preview">
+                <lume-button>Default Button</lume-button>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="button-default">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="button-default" class="language-html">&lt;lume-button&gt;Default Button&lt;/lume-button&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <!-- All Variants -->
+          <div class="content-block">
+            <h2>All Variants</h2>
+            <p>LumeButton supports 7 distinct visual variants:</p>
+
+            <div class="example-container">
+              <div class="example-preview">
+                <lume-button variant="primary">Primary</lume-button>
+                <lume-button variant="secondary">Secondary</lume-button>
+                <lume-button variant="outlined">Outlined</lume-button>
+                <lume-button variant="ghost">Ghost</lume-button>
+                <lume-button variant="glow">Glow</lume-button>
+                <lume-button variant="icon-btn">🎯</lume-button>
+                <lume-button variant="link">Link</lume-button>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="button-variants">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="button-variants" class="language-html">&lt;lume-button variant="primary"&gt;Primary&lt;/lume-button&gt;
+&lt;lume-button variant="secondary"&gt;Secondary&lt;/lume-button&gt;
+&lt;lume-button variant="outlined"&gt;Outlined&lt;/lume-button&gt;
+&lt;lume-button variant="ghost"&gt;Ghost&lt;/lume-button&gt;
+&lt;lume-button variant="glow"&gt;Glow&lt;/lume-button&gt;
+&lt;lume-button variant="icon-btn"&gt;🎯&lt;/lume-button&gt;
+&lt;lume-button variant="link"&gt;Link&lt;/lume-button&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>Sizes</h3>
+            <div class="example-container">
+              <div class="example-preview">
+                <lume-button size="small">Small</lume-button>
+                <lume-button size="medium">Medium</lume-button>
+                <lume-button size="large">Large</lume-button>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="button-sizes">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="button-sizes" class="language-html">&lt;lume-button size="small"&gt;Small&lt;/lume-button&gt;
+&lt;lume-button size="medium"&gt;Medium&lt;/lume-button&gt;
+&lt;lume-button size="large"&gt;Large&lt;/lume-button&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>Button States</h3>
+            <div class="example-container">
+              <div class="example-preview">
+                <lume-button>Normal</lume-button>
+                <lume-button loading>Loading</lume-button>
+                <lume-button disabled>Disabled</lume-button>
+                <lume-button full-width>Full Width</lume-button>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="button-states">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="button-states" class="language-html">&lt;lume-button&gt;Normal&lt;/lume-button&gt;
+&lt;lume-button loading&gt;Loading&lt;/lume-button&gt;
+&lt;lume-button disabled&gt;Disabled&lt;/lume-button&gt;
+&lt;lume-button full-width&gt;Full Width&lt;/lume-button&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>Theme Variations</h3>
+            <div class="example-container">
+              <div class="example-preview">
+                <lume-button theme="dark">Dark Theme</lume-button>
+                <lume-button theme="light">Light Theme</lume-button>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="button-themes">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="button-themes" class="language-html">&lt;lume-button theme="dark"&gt;Dark Theme&lt;/lume-button&gt;
+&lt;lume-button theme="light"&gt;Light Theme&lt;/lume-button&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>Link Buttons</h3>
+            <div class="example-container">
+              <div class="example-preview">
+                <lume-button href="https://example.com"
+                  >Link Button</lume-button
+                >
+                <lume-button href="https://example.com" target="_blank"
+                  >External Link</lume-button
+                >
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="button-links">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="button-links" class="language-html">&lt;lume-button href="https://example.com"&gt;Link Button&lt;/lume-button&gt;
+&lt;lume-button href="https://example.com" target="_blank"&gt;External Link&lt;/lume-button&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>Custom Colors - Basic</h3>
+            <div class="example-container">
+              <div class="example-preview">
+                <lume-button bg-color="#ff6b6b">Custom Red</lume-button>
+                <lume-button color="#ffffff" bg-color="#10b981"
+                  >Custom Green</lume-button
+                >
+                <lume-button bg-color="#8b5cf6" color="white"
+                  >Custom Purple</lume-button
+                >
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button
+                    class="copy-btn"
+                    data-copy-target="button-colors-basic"
+                  >
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="button-colors-basic" class="language-html">&lt;lume-button bg-color="#ff6b6b"&gt;Custom Red&lt;/lume-button&gt;
+&lt;lume-button color="#ffffff" bg-color="#10b981"&gt;Custom Green&lt;/lume-button&gt;
+&lt;lume-button bg-color="#8b5cf6" color="white"&gt;Custom Purple&lt;/lume-button&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>Advanced Customizations</h3>
+            <div class="example-container">
+              <div class="example-preview">
+                <lume-button
+                  variant="outlined"
+                  color="#10b981"
+                  border="2px solid #10b981"
+                  hover-bg-color="#10b981"
+                  hover-color="white"
+                  radius="20px"
+                >
+                  Rounded Green
+                </lume-button>
+
+                <lume-button
+                  variant="glow"
+                  glow-color="rgba(244, 63, 94, 0.5)"
+                  bg-color="#f43f5e"
+                  shadow="0 8px 30px rgba(244, 63, 94, 0.3)"
+                >
+                  Glowing Pink
+                </lume-button>
+
+                <lume-button
+                  padding="1rem 2rem"
+                  font-size="18px"
+                  font-weight="700"
+                  bg-color="linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+                  border="none"
+                  radius="10px"
+                >
+                  Gradient Button
+                </lume-button>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="button-advanced">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="button-advanced" class="language-html">&lt;lume-button 
+  variant="outlined" 
+  color="#10b981" 
+  border="2px solid #10b981" 
+  hover-bg-color="#10b981" 
+  hover-color="white" 
+  radius="20px"&gt;
+  Rounded Green
+&lt;/lume-button&gt;
+
+&lt;lume-button 
+  variant="glow" 
+  glow-color="rgba(244, 63, 94, 0.5)" 
+  bg-color="#f43f5e"
+  shadow="0 8px 30px rgba(244, 63, 94, 0.3)"&gt;
+  Glowing Pink
+&lt;/lume-button&gt;
+
+&lt;lume-button 
+  padding="1rem 2rem" 
+  font-size="18px" 
+  font-weight="700" 
+  bg-color="linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+  border="none"
+  radius="10px"&gt;
+  Gradient Button
+&lt;/lume-button&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>Extreme Customizations</h3>
+            <div class="example-container">
+              <div class="example-preview">
+                <lume-button
+                  width="200px"
+                  height="60px"
+                  bg-color="#1f2937"
+                  color="#f3f4f6"
+                  border="2px solid #6366f1"
+                  hover-bg-color="#6366f1"
+                  hover-color="white"
+                  radius="30px"
+                  shadow="0 10px 25px rgba(99, 102, 241, 0.3)"
+                  font-weight="600"
+                  font-size="16px"
+                >
+                  Custom Dimensions
+                </lume-button>
+
+                <lume-button
+                  variant="icon-btn"
+                  width="50px"
+                  height="50px"
+                  radius="50%"
+                  bg-color="#ef4444"
+                  hover-bg-color="#dc2626"
+                  shadow="0 4px 20px rgba(239, 68, 68, 0.4)"
+                >
+                  ❤️
+                </lume-button>
+
+                <lume-button
+                  padding="8px 16px"
+                  font-size="12px"
+                  bg-color="#374151"
+                  color="#9ca3af"
+                  hover-bg-color="#4b5563"
+                  hover-color="#f3f4f6"
+                  border="1px solid #6b7280"
+                  radius="4px"
+                >
+                  Mini Button
+                </lume-button>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="button-extreme">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="button-extreme" class="language-html">&lt;lume-button 
+  width="200px" 
+  height="60px" 
+  bg-color="#1f2937" 
+  color="#f3f4f6" 
+  border="2px solid #6366f1" 
+  hover-bg-color="#6366f1" 
+  hover-color="white" 
+  radius="30px" 
+  shadow="0 10px 25px rgba(99, 102, 241, 0.3)" 
+  font-weight="600" 
+  font-size="16px"&gt;
+  Custom Dimensions
+&lt;/lume-button&gt;
+
+&lt;lume-button 
+  variant="icon-btn" 
+  width="50px" 
+  height="50px" 
+  radius="50%" 
+  bg-color="#ef4444" 
+  hover-bg-color="#dc2626" 
+  shadow="0 4px 20px rgba(239, 68, 68, 0.4)"&gt;
+  ❤️
+&lt;/lume-button&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <!-- Properties Table -->
+          <div class="content-block">
+            <h2>Properties Reference</h2>
+            <div class="properties-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Property</th>
+                    <th>Type</th>
+                    <th>Default</th>
+                    <th>Options</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>variant</code></td>
+                    <td><code>string</code></td>
+                    <td><code>primary</code></td>
+                    <td>
+                      primary, secondary, outlined, ghost, glow, icon-btn, link
+                    </td>
+                    <td>Button visual style variant</td>
+                  </tr>
+                  <tr>
+                    <td><code>size</code></td>
+                    <td><code>string</code></td>
+                    <td><code>medium</code></td>
+                    <td>small, medium, large</td>
+                    <td>Button size</td>
+                  </tr>
+                  <tr>
+                    <td><code>theme</code></td>
+                    <td><code>string</code></td>
+                    <td><code>dark</code></td>
+                    <td>dark, light</td>
+                    <td>Color theme</td>
+                  </tr>
+                  <tr>
+                    <td><code>disabled</code></td>
+                    <td><code>boolean</code></td>
+                    <td><code>false</code></td>
+                    <td>-</td>
+                    <td>Disables the button</td>
+                  </tr>
+                  <tr>
+                    <td><code>loading</code></td>
+                    <td><code>boolean</code></td>
+                    <td><code>false</code></td>
+                    <td>-</td>
+                    <td>Shows loading spinner</td>
+                  </tr>
+                  <tr>
+                    <td><code>full-width</code></td>
+                    <td><code>boolean</code></td>
+                    <td><code>false</code></td>
+                    <td>-</td>
+                    <td>Makes button full width</td>
+                  </tr>
+                  <tr>
+                    <td><code>href</code></td>
+                    <td><code>string</code></td>
+                    <td><code>null</code></td>
+                    <td>-</td>
+                    <td>Makes button act as a link</td>
+                  </tr>
+                  <tr>
+                    <td><code>target</code></td>
+                    <td><code>string</code></td>
+                    <td><code>_self</code></td>
+                    <td>_self, _blank, _parent, _top</td>
+                    <td>Link target behavior</td>
+                  </tr>
+                  <tr>
+                    <td><code>color</code></td>
+                    <td><code>string</code></td>
+                    <td><code>auto</code></td>
+                    <td>Any CSS color</td>
+                    <td>Text color</td>
+                  </tr>
+                  <tr>
+                    <td><code>bg-color</code></td>
+                    <td><code>string</code></td>
+                    <td><code>auto</code></td>
+                    <td>Any CSS color</td>
+                    <td>Background color</td>
+                  </tr>
+                  <tr>
+                    <td><code>hover-color</code></td>
+                    <td><code>string</code></td>
+                    <td><code>auto</code></td>
+                    <td>Any CSS color</td>
+                    <td>Hover text color</td>
+                  </tr>
+                  <tr>
+                    <td><code>hover-bg-color</code></td>
+                    <td><code>string</code></td>
+                    <td><code>auto</code></td>
+                    <td>Any CSS color</td>
+                    <td>Hover background color</td>
+                  </tr>
+                  <tr>
+                    <td><code>glow-color</code></td>
+                    <td><code>string</code></td>
+                    <td><code>rgba(37, 99, 235, 0.5)</code></td>
+                    <td>Any CSS color</td>
+                    <td>Glow effect color (glow variant)</td>
+                  </tr>
+                  <tr>
+                    <td><code>border</code></td>
+                    <td><code>string</code></td>
+                    <td><code>auto</code></td>
+                    <td>Any CSS border</td>
+                    <td>Border style</td>
+                  </tr>
+                  <tr>
+                    <td><code>radius</code></td>
+                    <td><code>string</code></td>
+                    <td><code>auto</code></td>
+                    <td>Any CSS border-radius</td>
+                    <td>Border radius</td>
+                  </tr>
+                  <tr>
+                    <td><code>padding</code></td>
+                    <td><code>string</code></td>
+                    <td><code>auto</code></td>
+                    <td>Any CSS padding</td>
+                    <td>Internal spacing</td>
+                  </tr>
+                  <tr>
+                    <td><code>font-size</code></td>
+                    <td><code>string</code></td>
+                    <td><code>auto</code></td>
+                    <td>Any CSS font-size</td>
+                    <td>Font size</td>
+                  </tr>
+                  <tr>
+                    <td><code>font-weight</code></td>
+                    <td><code>string</code></td>
+                    <td><code>500</code></td>
+                    <td>Any CSS font-weight</td>
+                    <td>Font weight</td>
+                  </tr>
+                  <tr>
+                    <td><code>width</code></td>
+                    <td><code>string</code></td>
+                    <td><code>auto</code></td>
+                    <td>Any CSS width</td>
+                    <td>Button width</td>
+                  </tr>
+                  <tr>
+                    <td><code>height</code></td>
+                    <td><code>string</code></td>
+                    <td><code>auto</code></td>
+                    <td>Any CSS height</td>
+                    <td>Button height</td>
+                  </tr>
+                  <tr>
+                    <td><code>shadow</code></td>
+                    <td><code>string</code></td>
+                    <td><code>auto</code></td>
+                    <td>Any CSS box-shadow</td>
+                    <td>Box shadow</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- Navbar Component -->
+        <section id="navbar" class="doc-section">
+          <div class="section-header">
+            <h1>LumeNavbar Component</h1>
+            <p class="section-description">
+              Responsive navigation component with 8+ unique variants, advanced
+              styling, and mobile-responsive design.
+            </p>
+          </div>
+
+          <!-- Default Usage -->
+          <div class="content-block">
+            <h2>Default Navbar</h2>
+            <p>The simplest navbar with no attributes:</p>
+
+            <div class="example-container">
+              <div class="example-preview navbar-preview">
+                <lume-navbar></lume-navbar>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="navbar-minimal">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="navbar-minimal" class="language-html">&lt;lume-navbar&gt;&lt;/lume-navbar&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-block">
+            <h2>All Navbar Variants</h2>
+
+            <h3>1. Default Navbar</h3>
+            <div class="example-container">
+              <div class="example-preview navbar-preview">
+                <lume-navbar theme="dark" logo-text="Brand" variant="default">
+                  <div slot="links">
+                    <a href="#" active>Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact</a>
+                  </div>
+                  <div slot="actions">
+                    <button variant="secondary">Sign In</button>
+                    <button variant="primary">Sign Up</button>
+                  </div>
+                </lume-navbar>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="navbar-default">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="navbar-default" class="language-html">&lt;lume-navbar theme="dark" logo-text="Brand" variant="default"&gt;
+  &lt;div slot="links"&gt;
+    &lt;a href="#" active&gt;Home&lt;/a&gt;
+    &lt;a href="#"&gt;About&lt;/a&gt;
+    &lt;a href="#"&gt;Services&lt;/a&gt;
+    &lt;a href="#"&gt;Contact&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div slot="actions"&gt;
+    &lt;button variant="secondary"&gt;Sign In&lt;/button&gt;
+    &lt;button variant="primary"&gt;Sign Up&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/lume-navbar&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>2. Glassmorphism Navbar</h3>
+            <div class="example-container">
+              <div class="example-preview navbar-preview">
+                <lume-navbar
+                  variant="glassmorphism"
+                  theme="dark"
+                  logo-text="Glass"
+                >
+                  <div slot="links">
+                    <a href="#" active>Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Portfolio</a>
+                    <a href="#">Contact</a>
+                  </div>
+                </lume-navbar>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="navbar-glass">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="navbar-glass" class="language-html">&lt;lume-navbar variant="glassmorphism" theme="dark" logo-text="Glass"&gt;
+  &lt;div slot="links"&gt;
+    &lt;a href="#" active&gt;Home&lt;/a&gt;
+    &lt;a href="#"&gt;About&lt;/a&gt;
+    &lt;a href="#"&gt;Portfolio&lt;/a&gt;
+    &lt;a href="#"&gt;Contact&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/lume-navbar&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>3. Gradient Navbar</h3>
+            <div class="example-container">
+              <div class="example-preview navbar-preview">
+                <lume-navbar
+                  variant="gradient"
+                  theme="dark"
+                  logo-text="Gradient"
+                >
+                  <div slot="links">
+                    <a href="#" active>Dashboard</a>
+                    <a href="#">Analytics</a>
+                    <a href="#">Reports</a>
+                    <a href="#">Settings</a>
+                  </div>
+                </lume-navbar>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="navbar-gradient">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="navbar-gradient" class="language-html">&lt;lume-navbar variant="gradient" theme="dark" logo-text="Gradient"&gt;
+  &lt;div slot="links"&gt;
+    &lt;a href="#" active&gt;Dashboard&lt;/a&gt;
+    &lt;a href="#"&gt;Analytics&lt;/a&gt;
+    &lt;a href="#"&gt;Reports&lt;/a&gt;
+    &lt;a href="#"&gt;Settings&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/lume-navbar&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>4. Floating Navbar</h3>
+            <div class="example-container">
+              <div class="example-preview navbar-preview">
+                <lume-navbar variant="floating" theme="dark" logo-text="Float">
+                  <div slot="links">
+                    <a href="#" active>Home</a>
+                    <a href="#">Features</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Contact</a>
+                  </div>
+                </lume-navbar>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="navbar-floating">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="navbar-floating" class="language-html">&lt;lume-navbar variant="floating" theme="dark" logo-text="Float"&gt;
+  &lt;div slot="links"&gt;
+    &lt;a href="#" active&gt;Home&lt;/a&gt;
+    &lt;a href="#"&gt;Features&lt;/a&gt;
+    &lt;a href="#"&gt;Pricing&lt;/a&gt;
+    &lt;a href="#"&gt;Contact&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/lume-navbar&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>5. Transparent Navbar</h3>
+            <div class="example-container">
+              <div class="example-preview navbar-preview">
+                <lume-navbar
+                  variant="transparent"
+                  theme="dark"
+                  logo-text="Transparent"
+                >
+                  <div slot="links">
+                    <a href="#" active>Gallery</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                  </div>
+                </lume-navbar>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button
+                    class="copy-btn"
+                    data-copy-target="navbar-transparent"
+                  >
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="navbar-transparent" class="language-html">&lt;lume-navbar variant="transparent" theme="dark" logo-text="Transparent"&gt;
+  &lt;div slot="links"&gt;
+    &lt;a href="#" active&gt;Gallery&lt;/a&gt;
+    &lt;a href="#"&gt;About&lt;/a&gt;
+    &lt;a href="#"&gt;Contact&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/lume-navbar&gt;</code></pre>
+              </div>
+            </div>
+
+            <!-- <h3>6. Sidebar Navbar</h3>
+        <div class="example-container">
+          <div class="example-preview navbar-preview">
+            <lume-navbar variant="sidebar" theme="dark" logo-text="Sidebar">
+              <div slot="links">
+                <a href="#" active>Dashboard</a>
+                <a href="#">Users</a>
+                <a href="#">Products</a>
+                <a href="#">Orders</a>
+                <a href="#">Settings</a>
+                <a href="#">Logout</a>
+              </div>
+            </lume-navbar>
+          </div>
+
+          <div class="code-block">
+            <div class="code-header">
+              <span class="code-title">HTML</span>
+              <button class="copy-btn" data-copy-target="navbar-sidebar">
+                Copy
+              </button>
+            </div>
+            <pre><code id="navbar-sidebar" class="language-html">&lt;lume-navbar variant="sidebar" theme="dark" logo-text="Sidebar"&gt;
+  &lt;div slot="links"&gt;
+    &lt;a href="#" active&gt;Dashboard&lt;/a&gt;
+    &lt;a href="#"&gt;Users&lt;/a&gt;
+    &lt;a href="#"&gt;Products&lt;/a&gt;
+    &lt;a href="#"&gt;Orders&lt;/a&gt;
+    &lt;a href="#"&gt;Settings&lt;/a&gt;
+    &lt;a href="#"&gt;Logout&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/lume-navbar&gt;</code></pre>
+          </div>
+        </div> -->
+
+            <h3>7. Split Navbar</h3>
+            <div class="example-container">
+              <div class="example-preview navbar-preview">
+                <lume-navbar variant="split" theme="dark" logo-text="Split">
+                  <div slot="links">
+                    <a href="#" active>Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact</a>
+                  </div>
+                </lume-navbar>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="navbar-split">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="navbar-split" class="language-html">&lt;lume-navbar variant="split" theme="dark" logo-text="Split"&gt;
+  &lt;div slot="links"&gt;
+    &lt;a href="#" active&gt;Home&lt;/a&gt;
+    &lt;a href="#"&gt;About&lt;/a&gt;
+    &lt;a href="#"&gt;Services&lt;/a&gt;
+    &lt;a href="#"&gt;Contact&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/lume-navbar&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>8. Mega Menu Navbar</h3>
+            <div class="example-container">
+              <div class="example-preview navbar-preview">
+                <lume-navbar variant="mega" theme="dark" logo-text="Mega">
+                  <div slot="links">
+                    <a href="#" active>Products</a>
+                    <a href="#">Solutions</a>
+                    <a href="#">Resources</a>
+                    <a href="#">Company</a>
+                  </div>
+                </lume-navbar>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="navbar-mega">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="navbar-mega" class="language-html">&lt;lume-navbar variant="mega" theme="dark" logo-text="Mega"&gt;
+  &lt;div slot="links"&gt;
+    &lt;a href="#" active&gt;Products&lt;/a&gt;
+    &lt;a href="#"&gt;Solutions&lt;/a&gt;
+    &lt;a href="#"&gt;Resources&lt;/a&gt;
+    &lt;a href="#"&gt;Company&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/lume-navbar&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-block">
+            <h2>Navbar Features & Options</h2>
+
+            <h3>With Logo Image</h3>
+            <div class="example-container">
+              <div class="example-preview navbar-preview">
+                <lume-navbar
+                  theme="dark"
+                  logo-src="https://via.placeholder.com/40x40/6366f1/ffffff?text=L"
+                  logo-text="LumeUI"
+                >
+                  <div slot="links">
+                    <a href="#" active>Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                  </div>
+                </lume-navbar>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="navbar-logo">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="navbar-logo" class="language-html">&lt;lume-navbar theme="dark" logo-src="logo.png" logo-text="LumeUI"&gt;
+  &lt;div slot="links"&gt;
+    &lt;a href="#" active&gt;Home&lt;/a&gt;
+    &lt;a href="#"&gt;About&lt;/a&gt;
+    &lt;a href="#"&gt;Contact&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/lume-navbar&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>Sticky Navigation</h3>
+            <div class="example-container">
+              <div class="example-preview navbar-preview">
+                <lume-navbar
+                  variant="default"
+                  theme="dark"
+                  logo-text="Sticky"
+                  sticky
+                >
+                  <div slot="links">
+                    <a href="#" active>Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                  </div>
+                </lume-navbar>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="navbar-sticky">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="navbar-sticky" class="language-html">&lt;lume-navbar variant="default" theme="dark" logo-text="Sticky" sticky&gt;
+  &lt;div slot="links"&gt;
+    &lt;a href="#" active&gt;Home&lt;/a&gt;
+    &lt;a href="#"&gt;About&lt;/a&gt;
+    &lt;a href="#"&gt;Contact&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/lume-navbar&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>Light Theme Navbars</h3>
+            <div class="example-container">
+              <div class="example-preview navbar-preview">
+                <lume-navbar theme="light" logo-text="Light Theme">
+                  <div slot="links">
+                    <a href="#" active>Home</a>
+                    <a href="#">Products</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                  </div>
+                  <div slot="actions">
+                    <button variant="outlined">Login</button>
+                    <button variant="primary">Sign Up</button>
+                  </div>
+                </lume-navbar>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="navbar-light">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="navbar-light" class="language-html">&lt;lume-navbar theme="light" logo-text="Light Theme"&gt;
+  &lt;div slot="links"&gt;
+    &lt;a href="#" active&gt;Home&lt;/a&gt;
+    &lt;a href="#"&gt;Products&lt;/a&gt;
+    &lt;a href="#"&gt;About&lt;/a&gt;
+    &lt;a href="#"&gt;Contact&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div slot="actions"&gt;
+    &lt;button variant="outlined"&gt;Login&lt;/button&gt;
+    &lt;button variant="primary"&gt;Sign Up&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/lume-navbar&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>Custom Colors & Advanced Styling</h3>
+            <div class="example-container">
+              <div class="example-preview navbar-preview">
+                <lume-navbar
+                  variant="default"
+                  theme="dark"
+                  logo-text="Custom Style"
+                  bg-color="#0f172a"
+                  brand-color="#f59e0b"
+                  text-color="#e2e8f0"
+                  active-link-color="#f59e0b"
+                  hover-bg-color="rgba(245, 158, 11, 0.1)"
+                >
+                  <div slot="links">
+                    <a href="#" active>Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact</a>
+                  </div>
+                </lume-navbar>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="navbar-custom">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="navbar-custom" class="language-html">&lt;lume-navbar 
+  variant="default" 
+  theme="dark" 
+  logo-text="Custom Style"
+  bg-color="#0f172a"
+  brand-color="#f59e0b"
+  text-color="#e2e8f0"
+  active-link-color="#f59e0b"
+  hover-bg-color="rgba(245, 158, 11, 0.1)"&gt;
+  &lt;div slot="links"&gt;
+    &lt;a href="#" active&gt;Home&lt;/a&gt;
+    &lt;a href="#"&gt;About&lt;/a&gt;
+    &lt;a href="#"&gt;Services&lt;/a&gt;
+    &lt;a href="#"&gt;Contact&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/lume-navbar&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>Mobile Responsive with Custom Breakpoint</h3>
+            <div class="example-container">
+              <div class="example-preview navbar-preview">
+                <lume-navbar
+                  theme="dark"
+                  logo-text="Mobile Ready"
+                  mobile-breakpoint="1024px"
+                >
+                  <div slot="links">
+                    <a href="#" active>Dashboard</a>
+                    <a href="#">Analytics</a>
+                    <a href="#">Reports</a>
+                    <a href="#">Settings</a>
+                    <a href="#">Profile</a>
+                  </div>
+                </lume-navbar>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="navbar-mobile">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="navbar-mobile" class="language-html">&lt;lume-navbar 
+  theme="dark" 
+  logo-text="Mobile Ready" 
+  mobile-breakpoint="1024px"&gt;
+  &lt;div slot="links"&gt;
+    &lt;a href="#" active&gt;Dashboard&lt;/a&gt;
+    &lt;a href="#"&gt;Analytics&lt;/a&gt;
+    &lt;a href="#"&gt;Reports&lt;/a&gt;
+    &lt;a href="#"&gt;Settings&lt;/a&gt;
+    &lt;a href="#"&gt;Profile&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/lume-navbar&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <!-- Properties Table (keep the same as before) -->
+          <div class="content-block">
+            <h2>Properties Reference</h2>
+            <div class="properties-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Property</th>
+                    <th>Type</th>
+                    <th>Default</th>
+                    <th>Options</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>variant</code></td>
+                    <td><code>string</code></td>
+                    <td><code>default</code></td>
+                    <td>
+                      default, glassmorphism, gradient, split, floating, mega,
+                      transparent
+                    </td>
+                    <td>Visual style variant</td>
+                  </tr>
+                  <tr>
+                    <td><code>theme</code></td>
+                    <td><code>string</code></td>
+                    <td><code>dark</code></td>
+                    <td>dark, light</td>
+                    <td>Color theme</td>
+                  </tr>
+                  <tr>
+                    <td><code>logo-text</code></td>
+                    <td><code>string</code></td>
+                    <td><code>Brand</code></td>
+                    <td>-</td>
+                    <td>Brand text</td>
+                  </tr>
+                  <tr>
+                    <td><code>logo-src</code></td>
+                    <td><code>string</code></td>
+                    <td><code>null</code></td>
+                    <td>-</td>
+                    <td>Logo image URL</td>
+                  </tr>
+                  <tr>
+                    <td><code>sticky</code></td>
+                    <td><code>boolean</code></td>
+                    <td><code>false</code></td>
+                    <td>-</td>
+                    <td>Sticky positioning</td>
+                  </tr>
+                  <tr>
+                    <td><code>brand-color</code></td>
+                    <td><code>string</code></td>
+                    <td><code>auto</code></td>
+                    <td>Any CSS color</td>
+                    <td>Brand color</td>
+                  </tr>
+                  <tr>
+                    <td><code>bg-color</code></td>
+                    <td><code>string</code></td>
+                    <td><code>auto</code></td>
+                    <td>Any CSS color</td>
+                    <td>Background color</td>
+                  </tr>
+                  <tr>
+                    <td><code>text-color</code></td>
+                    <td><code>string</code></td>
+                    <td><code>auto</code></td>
+                    <td>Any CSS color</td>
+                    <td>Text color</td>
+                  </tr>
+                  <tr>
+                    <td><code>active-link-color</code></td>
+                    <td><code>string</code></td>
+                    <td><code>auto</code></td>
+                    <td>Any CSS color</td>
+                    <td>Active link color</td>
+                  </tr>
+                  <tr>
+                    <td><code>hover-bg-color</code></td>
+                    <td><code>string</code></td>
+                    <td><code>auto</code></td>
+                    <td>Any CSS color</td>
+                    <td>Link hover background</td>
+                  </tr>
+                  <tr>
+                    <td><code>mobile-breakpoint</code></td>
+                    <td><code>string</code></td>
+                    <td><code>768px</code></td>
+                    <td>Any CSS size</td>
+                    <td>Mobile breakpoint</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- Hero Component -->
+        <section id="hero" class="doc-section">
+          <div class="section-header">
+            <h1>LumeHero Component</h1>
+            <p class="section-description">
+              Eye-catching hero sections with multiple layouts, background
+              options, and animation support.
+            </p>
+          </div>
+
+          <!-- Default Usage -->
+          <div class="content-block">
+            <h2>Default Hero</h2>
+            <p>The simplest hero with no attributes:</p>
+
+            <div class="example-container">
+              <div class="example-preview hero-preview">
+                <lume-hero></lume-hero>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="hero-minimal">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="hero-minimal" class="language-html">&lt;lume-hero&gt;&lt;/lume-hero&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-block">
+            <h2>All Hero Variations</h2>
+
+            <h3>Basic Hero with Content</h3>
+            <div class="example-container">
+              <div class="example-preview hero-preview">
+                <lume-hero
+                  theme="dark"
+                  height="400px"
+                  heading-text="Welcome to Lume UI"
+                  subheading-text="Modern Web Components"
+                  description-text="Build beautiful, responsive interfaces with our comprehensive component library"
+                  primary-button-text="Get Started"
+                  secondary-button-text="Learn More"
+                >
+                </lume-hero>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="hero-basic">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="hero-basic" class="language-html">&lt;lume-hero 
+  theme="dark" 
+  height="400px"
+  heading-text="Welcome to Lume UI"
+  subheading-text="Modern Web Components"
+  description-text="Build beautiful, responsive interfaces"
+  primary-button-text="Get Started"
+  secondary-button-text="Learn More"&gt;
+&lt;/lume-hero&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>Centered Layout Hero</h3>
+            <div class="example-container">
+              <div class="example-preview hero-preview">
+                <lume-hero
+                  theme="dark"
+                  layout="centered"
+                  height="350px"
+                  heading-text="Centered Layout"
+                  description-text="Perfect for landing pages with centered content alignment"
+                  primary-button-text="Explore"
+                >
+                </lume-hero>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="hero-centered">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="hero-centered" class="language-html">&lt;lume-hero
+  theme="dark"
+  layout="centered"
+  height="350px"
+  heading-text="Centered Layout"
+  description-text="Perfect for landing pages"
+  primary-button-text="Explore"&gt;
+&lt;/lume-hero&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>Split Layout Hero</h3>
+            <div class="example-container">
+              <div class="example-preview hero-preview">
+                <lume-hero
+                  theme="dark"
+                  layout="split"
+                  height="400px"
+                  heading-text="Split Layout Hero"
+                  description-text="Content on one side, space for media on the other"
+                  primary-button-text="Try Now"
+                >
+                </lume-hero>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="hero-split">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="hero-split" class="language-html">&lt;lume-hero
+  theme="dark"
+  layout="split"
+  height="400px"
+  heading-text="Split Layout Hero"
+  description-text="Content on one side, space for media on the other"
+  primary-button-text="Try Now"&gt;
+&lt;/lume-hero&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>Minimal Layout Hero</h3>
+            <div class="example-container">
+              <div class="example-preview hero-preview">
+                <lume-hero
+                  theme="light"
+                  layout="minimal"
+                  height="250px"
+                  heading-text="Minimal Design"
+                  description-text="Clean and simple hero section"
+                >
+                </lume-hero>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button
+                    class="copy-btn"
+                    data-copy-target="hero-minimal-layout"
+                  >
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="hero-minimal-layout" class="language-html">&lt;lume-hero
+  theme="light"
+  layout="minimal"
+  height="250px"
+  heading-text="Minimal Design"
+  description-text="Clean and simple hero section"&gt;
+&lt;/lume-hero&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>Background Types</h3>
+
+            <h4>Solid Color Background</h4>
+            <div class="example-container">
+              <div class="example-preview hero-preview">
+                <lume-hero
+                  height="300px"
+                  background-type="color"
+                  background-color="#1e40af"
+                  heading-text="Solid Blue Background"
+                  description-text="Custom solid color background"
+                  primary-button-text="Get Started"
+                >
+                </lume-hero>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="hero-solid">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="hero-solid" class="language-html">&lt;lume-hero 
+  height="300px"
+  background-type="color"
+  background-color="#1e40af"
+  heading-text="Solid Blue Background"
+  description-text="Custom solid color background"
+  primary-button-text="Get Started"&gt;
+&lt;/lume-hero&gt;</code></pre>
+              </div>
+            </div>
+
+            <h4>Gradient Background</h4>
+            <div class="example-container">
+              <div class="example-preview hero-preview">
+                <lume-hero
+                  height="300px"
+                  background-type="gradient"
+                  background-gradient="linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+                  heading-text="Gradient Background"
+                  description-text="Beautiful gradient backgrounds"
+                  primary-button-text="Explore"
+                >
+                </lume-hero>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="hero-gradient">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="hero-gradient" class="language-html">&lt;lume-hero 
+  height="300px"
+  background-type="gradient"
+  background-gradient="linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
+  heading-text="Gradient Background"
+  description-text="Beautiful gradient backgrounds"
+  primary-button-text="Explore"&gt;
+&lt;/lume-hero&gt;</code></pre>
+              </div>
+            </div>
+
+            <h4>Image Background</h4>
+            <div class="example-container">
+              <div class="example-preview hero-preview">
+                <lume-hero
+                  height="350px"
+                  background-type="image"
+                  background-image="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                  background-overlay="rgba(0, 0, 0, 0.5)"
+                  heading-text="Image Background"
+                  description-text="Hero with stunning background image"
+                  primary-button-text="Discover"
+                >
+                </lume-hero>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="hero-image">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="hero-image" class="language-html">&lt;lume-hero 
+  height="350px"
+  background-type="image"
+  background-image="https://images.unsplash.com/photo-1506905925346-21bda4d32df4"
+  background-overlay="rgba(0, 0, 0, 0.5)"
+  heading-text="Image Background"
+  description-text="Hero with stunning background image"
+  primary-button-text="Discover"&gt;
+&lt;/lume-hero&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>Animated Heroes</h3>
+            <div class="example-container">
+              <div class="example-preview hero-preview">
+                <lume-hero
+                  theme="dark"
+                  height="300px"
+                  animate
+                  animation-duration="1s"
+                  animation-delay="0.2s"
+                  heading-text="Animated Hero"
+                  description-text="Smooth animations on load"
+                  primary-button-text="Amazing!"
+                >
+                </lume-hero>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="hero-animated">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="hero-animated" class="language-html">&lt;lume-hero 
+  theme="dark"
+  height="300px"
+  animate
+  animation-duration="1s"
+  animation-delay="0.2s"
+  heading-text="Animated Hero"
+  description-text="Smooth animations on load"
+  primary-button-text="Amazing!"&gt;
+&lt;/lume-hero&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>Custom Content Styling</h3>
+            <div class="example-container">
+              <div class="example-preview hero-preview">
+                <lume-hero
+                  theme="dark"
+                  height="300px"
+                  heading-text="Custom Styled Hero"
+                  description-text="Custom fonts, colors, and spacing"
+                  primary-button-text="Get Started"
+                  heading-color="#f59e0b"
+                  description-color="#d1d5db"
+                  heading-size="3rem"
+                  description-size="1.25rem"
+                  content-max-width="600px"
+                >
+                </lume-hero>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="hero-custom">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="hero-custom" class="language-html">&lt;lume-hero 
+  theme="dark"
+  height="300px"
+  heading-text="Custom Styled Hero"
+  description-text="Custom fonts, colors, and spacing"
+  primary-button-text="Get Started"
+  heading-color="#f59e0b"
+  description-color="#d1d5db"
+  heading-size="3rem"
+  description-size="1.25rem"
+  content-max-width="600px"&gt;
+&lt;/lume-hero&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>Full Viewport Hero</h3>
+            <div class="example-container">
+              <div class="example-preview hero-preview">
+                <lume-hero
+                  theme="dark"
+                  height="100vh"
+                  background-type="gradient"
+                  background-gradient="linear-gradient(45deg, #1e3a8a 0%, #7c3aed 100%)"
+                  heading-text="Full Screen Hero"
+                  subheading-text="Takes full viewport height"
+                  description-text="Perfect for landing pages that need maximum impact"
+                  primary-button-text="Get Started"
+                  secondary-button-text="Learn More"
+                >
+                </lume-hero>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="hero-fullscreen">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="hero-fullscreen" class="language-html">&lt;lume-hero 
+  theme="dark"
+  height="100vh"
+  background-type="gradient"
+  background-gradient="linear-gradient(45deg, #1e3a8a 0%, #7c3aed 100%)"
+  heading-text="Full Screen Hero"
+  subheading-text="Takes full viewport height"
+  description-text="Perfect for landing pages that need maximum impact"
+  primary-button-text="Get Started"
+  secondary-button-text="Learn More"&gt;
+&lt;/lume-hero&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <!-- Properties Table (enhanced) -->
+          <div class="content-block">
+            <h2>Properties Reference</h2>
+            <div class="properties-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Property</th>
+                    <th>Type</th>
+                    <th>Default</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>theme</code></td>
+                    <td><code>string</code></td>
+                    <td><code>dark</code></td>
+                    <td>Color theme (dark, light)</td>
+                  </tr>
+                  <tr>
+                    <td><code>layout</code></td>
+                    <td><code>string</code></td>
+                    <td><code>centered</code></td>
+                    <td>Layout variant (centered, split, minimal)</td>
+                  </tr>
+                  <tr>
+                    <td><code>height</code></td>
+                    <td><code>string</code></td>
+                    <td><code>100vh</code></td>
+                    <td>Hero section height</td>
+                  </tr>
+                  <tr>
+                    <td><code>heading-text</code></td>
+                    <td><code>string</code></td>
+                    <td><code>Welcome to Our Platform</code></td>
+                    <td>Main heading text</td>
+                  </tr>
+                  <tr>
+                    <td><code>subheading-text</code></td>
+                    <td><code>string</code></td>
+                    <td><code>Build amazing experiences</code></td>
+                    <td>Subheading text</td>
+                  </tr>
+                  <tr>
+                    <td><code>description-text</code></td>
+                    <td><code>string</code></td>
+                    <td><code>Create beautiful...</code></td>
+                    <td>Description text</td>
+                  </tr>
+                  <tr>
+                    <td><code>primary-button-text</code></td>
+                    <td><code>string</code></td>
+                    <td><code>Get Started</code></td>
+                    <td>Primary button text</td>
+                  </tr>
+                  <tr>
+                    <td><code>secondary-button-text</code></td>
+                    <td><code>string</code></td>
+                    <td><code>Learn More</code></td>
+                    <td>Secondary button text</td>
+                  </tr>
+                  <tr>
+                    <td><code>background-type</code></td>
+                    <td><code>string</code></td>
+                    <td><code>color</code></td>
+                    <td>Background type (color, image, gradient)</td>
+                  </tr>
+                  <tr>
+                    <td><code>background-color</code></td>
+                    <td><code>string</code></td>
+                    <td><code>auto</code></td>
+                    <td>Solid background color</td>
+                  </tr>
+                  <tr>
+                    <td><code>background-image</code></td>
+                    <td><code>string</code></td>
+                    <td><code>null</code></td>
+                    <td>Background image URL</td>
+                  </tr>
+                  <tr>
+                    <td><code>background-gradient</code></td>
+                    <td><code>string</code></td>
+                    <td><code>null</code></td>
+                    <td>CSS gradient value</td>
+                  </tr>
+                  <tr>
+                    <td><code>background-overlay</code></td>
+                    <td><code>string</code></td>
+                    <td><code>null</code></td>
+                    <td>Overlay color for image backgrounds</td>
+                  </tr>
+                  <tr>
+                    <td><code>animate</code></td>
+                    <td><code>boolean</code></td>
+                    <td><code>false</code></td>
+                    <td>Enable animations</td>
+                  </tr>
+                  <tr>
+                    <td><code>animation-duration</code></td>
+                    <td><code>string</code></td>
+                    <td><code>0.6s</code></td>
+                    <td>Animation duration</td>
+                  </tr>
+                  <tr>
+                    <td><code>animation-delay</code></td>
+                    <td><code>string</code></td>
+                    <td><code>0s</code></td>
+                    <td>Animation delay</td>
+                  </tr>
+                  <tr>
+                    <td><code>heading-color</code></td>
+                    <td><code>string</code></td>
+                    <td><code>auto</code></td>
+                    <td>Heading text color</td>
+                  </tr>
+                  <tr>
+                    <td><code>description-color</code></td>
+                    <td><code>string</code></td>
+                    <td><code>auto</code></td>
+                    <td>Description text color</td>
+                  </tr>
+                  <tr>
+                    <td><code>heading-size</code></td>
+                    <td><code>string</code></td>
+                    <td><code>auto</code></td>
+                    <td>Heading font size</td>
+                  </tr>
+                  <tr>
+                    <td><code>description-size</code></td>
+                    <td><code>string</code></td>
+                    <td><code>auto</code></td>
+                    <td>Description font size</td>
+                  </tr>
+                  <tr>
+                    <td><code>content-max-width</code></td>
+                    <td><code>string</code></td>
+                    <td><code>800px</code></td>
+                    <td>Maximum content width</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- Article Component - ALL VARIANTS -->
+        <section id="article" class="doc-section">
+          <div class="section-header">
+            <h1>LumeArticle Component</h1>
+            <p class="section-description">
+              Flexible article component with multiple layouts, image support,
+              and rich content formatting options.
+            </p>
+          </div>
+
+          <!-- Default Usage -->
+          <div class="content-block">
+            <h2>Default Article</h2>
+            <p>The simplest article with no attributes:</p>
+
+            <div class="example-container">
+              <div class="example-preview article-preview">
+                <lume-article></lume-article>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="article-minimal">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="article-minimal" class="language-html">&lt;lume-article&gt;&lt;/lume-article&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-block">
+            <h2>All Article Variations</h2>
+
+            <h3>Basic Article with Content</h3>
+            <div class="example-container">
+              <div class="example-preview article-preview">
+                <lume-article
+                  theme="dark"
+                  title="Getting Started with Lume UI"
+                  author="John Doe"
+                  date="September 17, 2025"
+                  excerpt="Learn how to build beautiful components with our modern web component library"
+                  content="This is a comprehensive guide to getting started with Lume UI components. You'll learn about installation, basic usage, and advanced customization options."
+                  read-time="5 min read"
+                >
+                </lume-article>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="article-basic">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="article-basic" class="language-html">&lt;lume-article 
+  theme="dark"
+  title="Getting Started with Lume UI"
+  author="John Doe"
+  date="September 17, 2025"
+  excerpt="Learn how to build beautiful components"
+  content="This is a comprehensive guide..."
+  read-time="5 min read"&gt;
+&lt;/lume-article&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>Article with Featured Image</h3>
+            <div class="example-container">
+              <div class="example-preview article-preview">
+                <lume-article
+                  theme="dark"
+                  title="Modern Web Development"
+                  author="Jane Smith"
+                  date="September 16, 2025"
+                  excerpt="Exploring the latest trends in web development and component-based architecture"
+                  content="Modern web development has evolved significantly with the introduction of web components and modern frameworks."
+                  featured-image="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  read-time="8 min read"
+                >
+                </lume-article>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="article-image">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="article-image" class="language-html">&lt;lume-article 
+  theme="dark"
+  title="Modern Web Development"
+  author="Jane Smith"
+  date="September 16, 2025"
+  excerpt="Exploring the latest trends in web development"
+  content="Modern web development has evolved significantly..."
+  featured-image="https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
+  read-time="8 min read"&gt;
+&lt;/lume-article&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>Card Layout Article</h3>
+            <div class="example-container">
+              <div class="example-preview article-preview">
+                <lume-article
+                  theme="light"
+                  layout="card"
+                  title="Component Best Practices"
+                  author="Alex Johnson"
+                  date="September 15, 2025"
+                  excerpt="Essential tips for building maintainable and scalable web components"
+                  content="Building effective web components requires following certain best practices and design patterns."
+                  featured-image="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  read-time="6 min read"
+                  show-tags
+                  tags="Web Components,Best Practices,JavaScript"
+                >
+                </lume-article>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="article-card">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="article-card" class="language-html">&lt;lume-article 
+  theme="light"
+  layout="card"
+  title="Component Best Practices"
+  author="Alex Johnson"
+  date="September 15, 2025"
+  excerpt="Essential tips for building maintainable components"
+  content="Building effective web components requires..."
+  featured-image="https://images.unsplash.com/photo-1555066931-4365d14bab8c"
+  read-time="6 min read"
+  show-tags
+  tags="Web Components,Best Practices,JavaScript"&gt;
+&lt;/lume-article&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>Minimal Layout Article</h3>
+            <div class="example-container">
+              <div class="example-preview article-preview">
+                <lume-article
+                  theme="dark"
+                  layout="minimal"
+                  title="Quick Tip: CSS Variables"
+                  author="Sarah Wilson"
+                  date="September 14, 2025"
+                  content="CSS custom properties (variables) are a powerful feature that can make your stylesheets more maintainable."
+                  read-time="2 min read"
+                >
+                </lume-article>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button
+                    class="copy-btn"
+                    data-copy-target="article-minimal-layout"
+                  >
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="article-minimal-layout" class="language-html">&lt;lume-article 
+  theme="dark"
+  layout="minimal"
+  title="Quick Tip: CSS Variables"
+  author="Sarah Wilson"
+  date="September 14, 2025"
+  content="CSS custom properties (variables) are a powerful feature..."
+  read-time="2 min read"&gt;
+&lt;/lume-article&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>Magazine Layout Article</h3>
+            <div class="example-container">
+              <div class="example-preview article-preview">
+                <lume-article
+                  theme="dark"
+                  layout="magazine"
+                  title="The Future of Web Components"
+                  subtitle="Exploring emerging trends and technologies"
+                  author="Michael Chen"
+                  author-bio="Senior Frontend Developer"
+                  author-avatar="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                  date="September 13, 2025"
+                  excerpt="An in-depth look at where web components are heading and what developers need to know"
+                  content="The web component ecosystem continues to evolve rapidly, with new specifications and browser implementations..."
+                  featured-image="https://images.unsplash.com/photo-1518773553398-650c184e0bb3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  read-time="12 min read"
+                  show-tags
+                  tags="Future Tech,Web Components,Trends"
+                  show-social
+                >
+                </lume-article>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="article-magazine">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="article-magazine" class="language-html">&lt;lume-article 
+  theme="dark"
+  layout="magazine"
+  title="The Future of Web Components"
+  subtitle="Exploring emerging trends and technologies"
+  author="Michael Chen"
+  author-bio="Senior Frontend Developer"
+  author-avatar="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e"
+  date="September 13, 2025"
+  excerpt="An in-depth look at where web components are heading"
+  content="The web component ecosystem continues to evolve..."
+  featured-image="https://images.unsplash.com/photo-1518773553398-650c184e0bb3"
+  read-time="12 min read"
+  show-tags
+  tags="Future Tech,Web Components,Trends"
+  show-social&gt;
+&lt;/lume-article&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <!-- Properties Table -->
+          <div class="content-block">
+            <h2>Properties Reference</h2>
+            <div class="properties-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Property</th>
+                    <th>Type</th>
+                    <th>Default</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>theme</code></td>
+                    <td><code>string</code></td>
+                    <td><code>dark</code></td>
+                    <td>Color theme (dark, light)</td>
+                  </tr>
+                  <tr>
+                    <td><code>layout</code></td>
+                    <td><code>string</code></td>
+                    <td><code>default</code></td>
+                    <td>Layout variant (default, card, minimal, magazine)</td>
+                  </tr>
+                  <tr>
+                    <td><code>title</code></td>
+                    <td><code>string</code></td>
+                    <td><code>Article Title</code></td>
+                    <td>Main article title</td>
+                  </tr>
+                  <tr>
+                    <td><code>subtitle</code></td>
+                    <td><code>string</code></td>
+                    <td><code>null</code></td>
+                    <td>Article subtitle</td>
+                  </tr>
+                  <tr>
+                    <td><code>author</code></td>
+                    <td><code>string</code></td>
+                    <td><code>Anonymous</code></td>
+                    <td>Author name</td>
+                  </tr>
+                  <tr>
+                    <td><code>author-bio</code></td>
+                    <td><code>string</code></td>
+                    <td><code>null</code></td>
+                    <td>Author biography</td>
+                  </tr>
+                  <tr>
+                    <td><code>author-avatar</code></td>
+                    <td><code>string</code></td>
+                    <td><code>null</code></td>
+                    <td>Author avatar image URL</td>
+                  </tr>
+                  <tr>
+                    <td><code>date</code></td>
+                    <td><code>string</code></td>
+                    <td><code>auto</code></td>
+                    <td>Publication date</td>
+                  </tr>
+                  <tr>
+                    <td><code>excerpt</code></td>
+                    <td><code>string</code></td>
+                    <td><code>null</code></td>
+                    <td>Article excerpt/summary</td>
+                  </tr>
+                  <tr>
+                    <td><code>content</code></td>
+                    <td><code>string</code></td>
+                    <td><code>Article content...</code></td>
+                    <td>Main article content</td>
+                  </tr>
+                  <tr>
+                    <td><code>featured-image</code></td>
+                    <td><code>string</code></td>
+                    <td><code>null</code></td>
+                    <td>Featured image URL</td>
+                  </tr>
+                  <tr>
+                    <td><code>read-time</code></td>
+                    <td><code>string</code></td>
+                    <td><code>null</code></td>
+                    <td>Estimated read time</td>
+                  </tr>
+                  <tr>
+                    <td><code>show-tags</code></td>
+                    <td><code>boolean</code></td>
+                    <td><code>false</code></td>
+                    <td>Show article tags</td>
+                  </tr>
+                  <tr>
+                    <td><code>tags</code></td>
+                    <td><code>string</code></td>
+                    <td><code>null</code></td>
+                    <td>Comma-separated tags</td>
+                  </tr>
+                  <tr>
+                    <td><code>show-social</code></td>
+                    <td><code>boolean</code></td>
+                    <td><code>false</code></td>
+                    <td>Show social sharing buttons</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- Form Component - ALL VARIANTS -->
+        <section id="form" class="doc-section">
+          <div class="section-header">
+            <h1>LumeForm Component</h1>
+            <p class="section-description">
+              Dynamic form component with validation, multiple field types, and
+              flexible layouts.
+            </p>
+          </div>
+
+          <!-- Default Usage -->
+          <div class="content-block">
+            <h2>Default Form</h2>
+            <p>The simplest form with no attributes:</p>
+
+            <div class="example-container">
+              <div class="example-preview form-preview">
+                <lume-form></lume-form>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="form-minimal">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="form-minimal" class="language-html">&lt;lume-form&gt;&lt;/lume-form&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-block">
+            <h2>All Form Variations</h2>
+
+            <h3>Contact Form</h3>
+            <div class="example-container">
+              <div class="example-preview form-preview">
+                <lume-form
+                  theme="dark"
+                  title="Contact Us"
+                  description="Get in touch with our team"
+                  fields="name:text:Your Name:true,email:email:Email Address:true,subject:text:Subject:true,message:textarea:Message:true"
+                  submit-text="Send Message"
+                  reset-text="Clear Form"
+                  show-reset
+                >
+                </lume-form>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="form-contact">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="form-contact" class="language-html">&lt;lume-form 
+  theme="dark"
+  title="Contact Us"
+  description="Get in touch with our team"
+  fields="name:text:Your Name:true,email:email:Email Address:true,subject:text:Subject:true,message:textarea:Message:true"
+  submit-text="Send Message"
+  reset-text="Clear Form"
+  show-reset&gt;
+&lt;/lume-form&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>Registration Form</h3>
+            <div class="example-container">
+              <div class="example-preview form-preview">
+                <lume-form
+                  theme="light"
+                  layout="card"
+                  title="Create Account"
+                  description="Join our community today"
+                  fields="firstName:text:First Name:true,lastName:text:Last Name:true,email:email:Email:true,password:password:Password:true,confirmPassword:password:Confirm Password:true,terms:checkbox:I agree to the terms and conditions:true"
+                  submit-text="Create Account"
+                  submit-variant="primary"
+                  show-validation
+                >
+                </lume-form>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="form-registration">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="form-registration" class="language-html">&lt;lume-form 
+  theme="light"
+  layout="card"
+  title="Create Account"
+  description="Join our community today"
+  fields="firstName:text:First Name:true,lastName:text:Last Name:true,email:email:Email:true,password:password:Password:true,confirmPassword:password:Confirm Password:true,terms:checkbox:I agree to the terms and conditions:true"
+  submit-text="Create Account"
+  submit-variant="primary"
+  show-validation&gt;
+&lt;/lume-form&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>Survey Form</h3>
+            <div class="example-container">
+              <div class="example-preview form-preview">
+                <lume-form
+                  theme="dark"
+                  layout="stepped"
+                  title="User Feedback Survey"
+                  description="Help us improve our services"
+                  fields="rating:select:Overall Rating:true:Excellent,Good,Fair,Poor,satisfaction:radio:How satisfied are you?:true:Very Satisfied,Satisfied,Neutral,Dissatisfied,comments:textarea:Additional Comments:false"
+                  submit-text="Submit Survey"
+                  show-progress
+                >
+                </lume-form>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="form-survey">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="form-survey" class="language-html">&lt;lume-form 
+  theme="dark"
+  layout="stepped"
+  title="User Feedback Survey"
+  description="Help us improve our services"
+  fields="rating:select:Overall Rating:true:Excellent,Good,Fair,Poor,satisfaction:radio:How satisfied are you?:true:Very Satisfied,Satisfied,Neutral,Dissatisfied,comments:textarea:Additional Comments:false"
+  submit-text="Submit Survey"
+  show-progress&gt;
+&lt;/lume-form&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>Newsletter Signup</h3>
+            <div class="example-container">
+              <div class="example-preview form-preview">
+                <lume-form
+                  theme="dark"
+                  layout="inline"
+                  title="Stay Updated"
+                  description="Subscribe to our newsletter"
+                  fields="email:email:Enter your email:true"
+                  submit-text="Subscribe"
+                  submit-variant="glow"
+                  compact
+                >
+                </lume-form>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="form-newsletter">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="form-newsletter" class="language-html">&lt;lume-form 
+  theme="dark"
+  layout="inline"
+  title="Stay Updated"
+  description="Subscribe to our newsletter"
+  fields="email:email:Enter your email:true"
+  submit-text="Subscribe"
+  submit-variant="glow"
+  compact&gt;
+&lt;/lume-form&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>Login Form</h3>
+            <div class="example-container">
+              <div class="example-preview form-preview">
+                <lume-form
+                  theme="light"
+                  layout="centered"
+                  title="Welcome Back"
+                  description="Sign in to your account"
+                  fields="username:text:Username or Email:true,password:password:Password:true,remember:checkbox:Remember me:false"
+                  submit-text="Sign In"
+                  submit-variant="primary"
+                  show-validation
+                  validation-rules='{"username": {"required": true, "minLength": 3}, "password": {"required": true, "minLength": 8}}'
+                  custom-styles='{"form": {"max-width": "400px", "margin": "0 auto"}}'
+                >
+                </lume-form>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="form-login">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="form-login" class="language-html">&lt;lume-form 
+  theme="light"
+  layout="centered"
+  title="Welcome Back"
+  description="Sign in to your account"
+  fields="username:text:Username or Email:true,password:password:Password:true,remember:checkbox:Remember me:false"
+  submit-text="Sign In"
+  submit-variant="primary"
+  show-validation
+  validation-rules='{"username": {"required": true, "minLength": 3}, "password": {"required": true, "minLength": 8}}'
+  custom-styles='{"form": {"max-width": "400px", "margin": "0 auto"}}'&gt;
+&lt;/lume-form&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <!-- Properties Table -->
+          <div class="content-block">
+            <h2>Properties Reference</h2>
+            <div class="properties-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Property</th>
+                    <th>Type</th>
+                    <th>Default</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>theme</code></td>
+                    <td><code>string</code></td>
+                    <td><code>dark</code></td>
+                    <td>Color theme (dark, light)</td>
+                  </tr>
+                  <tr>
+                    <td><code>layout</code></td>
+                    <td><code>string</code></td>
+                    <td><code>default</code></td>
+                    <td>
+                      Layout variant (default, card, inline, stepped, centered)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><code>title</code></td>
+                    <td><code>string</code></td>
+                    <td><code>Form</code></td>
+                    <td>Form title</td>
+                  </tr>
+                  <tr>
+                    <td><code>description</code></td>
+                    <td><code>string</code></td>
+                    <td><code>null</code></td>
+                    <td>Form description</td>
+                  </tr>
+                  <tr>
+                    <td><code>fields</code></td>
+                    <td><code>string</code></td>
+                    <td><code>name:text:Name:true</code></td>
+                    <td>
+                      Field definitions (name:type:label:required:options)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><code>submit-text</code></td>
+                    <td><code>string</code></td>
+                    <td><code>Submit</code></td>
+                    <td>Submit button text</td>
+                  </tr>
+                  <tr>
+                    <td><code>reset-text</code></td>
+                    <td><code>string</code></td>
+                    <td><code>Reset</code></td>
+                    <td>Reset button text</td>
+                  </tr>
+                  <tr>
+                    <td><code>submit-variant</code></td>
+                    <td><code>string</code></td>
+                    <td><code>primary</code></td>
+                    <td>Submit button variant</td>
+                  </tr>
+                  <tr>
+                    <td><code>show-reset</code></td>
+                    <td><code>boolean</code></td>
+                    <td><code>false</code></td>
+                    <td>Show reset button</td>
+                  </tr>
+                  <tr>
+                    <td><code>show-validation</code></td>
+                    <td><code>boolean</code></td>
+                    <td><code>false</code></td>
+                    <td>Show validation messages</td>
+                  </tr>
+                  <tr>
+                    <td><code>show-progress</code></td>
+                    <td><code>boolean</code></td>
+                    <td><code>false</code></td>
+                    <td>Show progress indicator</td>
+                  </tr>
+                  <tr>
+                    <td><code>compact</code></td>
+                    <td><code>boolean</code></td>
+                    <td><code>false</code></td>
+                    <td>Compact spacing</td>
+                  </tr>
+                  <tr>
+                    <td><code>validation-rules</code></td>
+                    <td><code>string</code></td>
+                    <td><code>null</code></td>
+                    <td>JSON validation rules</td>
+                  </tr>
+                  <tr>
+                    <td><code>custom-styles</code></td>
+                    <td><code>string</code></td>
+                    <td><code>null</code></td>
+                    <td>JSON custom styles</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer Component - ALL VARIANTS -->
+        <section id="footer" class="doc-section">
+          <div class="section-header">
+            <h1>LumeFooter Component</h1>
+            <p class="section-description">
+              Customizable footer component with multiple layouts, social icons,
+              and flexible content organization.
+            </p>
+          </div>
+
+          <!-- Default Usage -->
+          <div class="content-block">
+            <h2>Default Footer</h2>
+            <p>The simplest footer with no attributes:</p>
+
+            <div class="example-container">
+              <div class="example-preview footer-preview">
+                <lume-footer></lume-footer>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="footer-minimal">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="footer-minimal" class="language-html">&lt;lume-footer&gt;&lt;/lume-footer&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-block">
+            <h2>All Footer Variations</h2>
+
+            <h3>Simple Footer</h3>
+            <div class="example-container">
+              <div class="example-preview footer-preview">
+                <lume-footer
+                  theme="dark"
+                  brand-text="LumeUI"
+                  links="Home|#,About|#,Contact|#,Privacy|#"
+                  copyright-text="© 2025 LumeUI. All rights reserved."
+                >
+                </lume-footer>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="footer-simple">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="footer-simple" class="language-html">&lt;lume-footer
+  theme="dark"
+  brand-text="LumeUI"
+  links="Home|#,About|#,Contact|#,Privacy|#"
+  copyright-text="© 2025 LumeUI. All rights reserved."&gt;
+&lt;/lume-footer&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>Footer with Social Icons</h3>
+            <div class="example-container">
+              <div class="example-preview footer-preview">
+                <lume-footer
+                  theme="dark"
+                  brand-text="LumeUI"
+                  brand-description="Modern web components for everyone"
+                  links="Products|#,Documentation|#,Support|#,Blog|#"
+                  social-links="twitter|https://twitter.com,github|https://github.com,linkedin|https://linkedin.com"
+                  copyright-text="© 2025 LumeUI. Building the future of web components."
+                  show-social
+                >
+                </lume-footer>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="footer-social">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="footer-social" class="language-html">&lt;lume-footer
+  theme="dark"
+  brand-text="LumeUI"
+  brand-description="Modern web components for everyone"
+  links="Products|#,Documentation|#,Support|#,Blog|#"
+  social-links="twitter|https://twitter.com,github|https://github.com,linkedin|https://linkedin.com"
+  copyright-text="© 2025 LumeUI. Building the future of web components."
+  show-social&gt;
+&lt;/lume-footer&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>Multi-Column Footer</h3>
+            <div class="example-container">
+              <div class="example-preview footer-preview">
+                <lume-footer
+                  theme="light"
+                  layout="columns"
+                  brand-text="LumeUI"
+                  brand-description="The most comprehensive web component library"
+                  columns='[
+                        {"title": "Product", "links": "Components|#,Templates|#,Themes|#,Pricing|#"},
+                        {"title": "Resources", "links": "Documentation|#,Tutorials|#,Examples|#,Blog|#"},
+                        {"title": "Company", "links": "About|#,Careers|#,Contact|#,Press|#"},
+                        {"title": "Legal", "links": "Privacy|#,Terms|#,Cookies|#,GDPR|#"}
+                    ]'
+                  social-links="twitter|#,github|#,linkedin|#,discord|#"
+                  copyright-text="© 2025 LumeUI Inc. All rights reserved."
+                  show-social
+                >
+                </lume-footer>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="footer-columns">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="footer-columns" class="language-html">&lt;lume-footer
+  theme="light"
+  layout="columns"
+  brand-text="LumeUI"
+  brand-description="The most comprehensive web component library"
+  columns='[
+    {"title": "Product", "links": "Components|#,Templates|#,Themes|#,Pricing|#"},
+    {"title": "Resources", "links": "Documentation|#,Tutorials|#,Examples|#,Blog|#"},
+    {"title": "Company", "links": "About|#,Careers|#,Contact|#,Press|#"},
+    {"title": "Legal", "links": "Privacy|#,Terms|#,Cookies|#,GDPR|#"}
+  ]'
+  social-links="twitter|#,github|#,linkedin|#,discord|#"
+  copyright-text="© 2025 LumeUI Inc. All rights reserved."
+  show-social&gt;
+&lt;/lume-footer&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>Centered Footer</h3>
+            <div class="example-container">
+              <div class="example-preview footer-preview">
+                <lume-footer
+                  theme="dark"
+                  layout="centered"
+                  brand-text="LumeUI"
+                  brand-logo="https://via.placeholder.com/40x40/6366f1/ffffff?text=L"
+                  brand-description="Crafted with ❤️ for developers worldwide"
+                  links="Home|#,About|#,Contact|#"
+                  social-links="twitter|#,github|#,linkedin|#"
+                  copyright-text="© 2025 LumeUI"
+                  show-social
+                  show-logo
+                >
+                </lume-footer>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="footer-centered">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="footer-centered" class="language-html">&lt;lume-footer
+  theme="dark"
+  layout="centered"
+  brand-text="LumeUI"
+  brand-logo="https://via.placeholder.com/40x40/6366f1/ffffff?text=L"
+  brand-description="Crafted with ❤️ for developers worldwide"
+  links="Home|#,About|#,Contact|#"
+  social-links="twitter|#,github|#,linkedin|#"
+  copyright-text="© 2025 LumeUI"
+  show-social
+  show-logo&gt;
+&lt;/lume-footer&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>Minimal Footer</h3>
+            <div class="example-container">
+              <div class="example-preview footer-preview">
+                <lume-footer
+                  theme="light"
+                  layout="minimal"
+                  brand-text="LumeUI"
+                  copyright-text="© 2025 LumeUI"
+                >
+                </lume-footer>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button
+                    class="copy-btn"
+                    data-copy-target="footer-minimal-layout"
+                  >
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="footer-minimal-layout" class="language-html">&lt;lume-footer
+  theme="light"
+  layout="minimal"
+  brand-text="LumeUI"
+  copyright-text="© 2025 LumeUI"&gt;
+&lt;/lume-footer&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>Newsletter Footer</h3>
+            <div class="example-container">
+              <div class="example-preview footer-preview">
+                <lume-footer
+                  theme="dark"
+                  layout="newsletter"
+                  brand-text="LumeUI"
+                  brand-description="Stay updated with the latest components and features"
+                  newsletter-title="Subscribe to our newsletter"
+                  newsletter-description="Get weekly updates and exclusive content"
+                  newsletter-placeholder="Enter your email"
+                  newsletter-button-text="Subscribe"
+                  links="Documentation|#,GitHub|#,Discord|#"
+                  social-links="twitter|#,github|#,discord|#"
+                  copyright-text="© 2025 LumeUI. Made with web components."
+                  show-newsletter
+                  show-social
+                >
+                </lume-footer>
+              </div>
+
+              <div class="code-block">
+                <div class="code-header">
+                  <span class="code-title">HTML</span>
+                  <button class="copy-btn" data-copy-target="footer-newsletter">
+                    Copy
+                  </button>
+                </div>
+                <pre><code id="footer-newsletter" class="language-html">&lt;lume-footer
+  theme="dark"
+  layout="newsletter"
+  brand-text="LumeUI"
+  brand-description="Stay updated with the latest components"
+  newsletter-title="Subscribe to our newsletter"
+  newsletter-description="Get weekly updates and exclusive content"
+  newsletter-placeholder="Enter your email"
+  newsletter-button-text="Subscribe"
+  links="Documentation|#,GitHub|#,Discord|#"
+  social-links="twitter|#,github|#,discord|#"
+  copyright-text="© 2025 LumeUI. Made with web components."
+  show-newsletter
+  show-social&gt;
+&lt;/lume-footer&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <!-- Properties Table -->
+          <div class="content-block">
+            <h2>Properties Reference</h2>
+            <div class="properties-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Property</th>
+                    <th>Type</th>
+                    <th>Default</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>theme</code></td>
+                    <td><code>string</code></td>
+                    <td><code>dark</code></td>
+                    <td>Color theme (dark, light)</td>
+                  </tr>
+                  <tr>
+                    <td><code>layout</code></td>
+                    <td><code>string</code></td>
+                    <td><code>default</code></td>
+                    <td>
+                      Layout variant (default, columns, centered, minimal,
+                      newsletter)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><code>brand-text</code></td>
+                    <td><code>string</code></td>
+                    <td><code>Brand</code></td>
+                    <td>Brand name</td>
+                  </tr>
+                  <tr>
+                    <td><code>brand-logo</code></td>
+                    <td><code>string</code></td>
+                    <td><code>null</code></td>
+                    <td>Brand logo URL</td>
+                  </tr>
+                  <tr>
+                    <td><code>brand-description</code></td>
+                    <td><code>string</code></td>
+                    <td><code>null</code></td>
+                    <td>Brand description</td>
+                  </tr>
+                  <tr>
+                    <td><code>links</code></td>
+                    <td><code>string</code></td>
+                    <td><code>Home|#</code></td>
+                    <td>Navigation links (text|url,text|url)</td>
+                  </tr>
+                  <tr>
+                    <td><code>columns</code></td>
+                    <td><code>string</code></td>
+                    <td><code>null</code></td>
+                    <td>JSON column definitions</td>
+                  </tr>
+                  <tr>
+                    <td><code>social-links</code></td>
+                    <td><code>string</code></td>
+                    <td><code>null</code></td>
+                    <td>Social media links (platform|url,platform|url)</td>
+                  </tr>
+                  <tr>
+                    <td><code>copyright-text</code></td>
+                    <td><code>string</code></td>
+                    <td><code>© 2025 Brand</code></td>
+                    <td>Copyright notice</td>
+                  </tr>
+                  <tr>
+                    <td><code>show-social</code></td>
+                    <td><code>boolean</code></td>
+                    <td><code>false</code></td>
+                    <td>Show social media icons</td>
+                  </tr>
+                  <tr>
+                    <td><code>show-logo</code></td>
+                    <td><code>boolean</code></td>
+                    <td><code>false</code></td>
+                    <td>Show brand logo</td>
+                  </tr>
+                  <tr>
+                    <td><code>show-newsletter</code></td>
+                    <td><code>boolean</code></td>
+                    <td><code>false</code></td>
+                    <td>Show newsletter signup</td>
+                  </tr>
+                  <tr>
+                    <td><code>newsletter-title</code></td>
+                    <td><code>string</code></td>
+                    <td><code>Newsletter</code></td>
+                    <td>Newsletter section title</td>
+                  </tr>
+                  <tr>
+                    <td><code>newsletter-description</code></td>
+                    <td><code>string</code></td>
+                    <td><code>null</code></td>
+                    <td>Newsletter description</td>
+                  </tr>
+                  <tr>
+                    <td><code>newsletter-placeholder</code></td>
+                    <td><code>string</code></td>
+                    <td><code>Enter email</code></td>
+                    <td>Newsletter input placeholder</td>
+                  </tr>
+                  <tr>
+                    <td><code>newsletter-button-text</code></td>
+                    <td><code>string</code></td>
+                    <td><code>Subscribe</code></td>
+                    <td>Newsletter button text</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Lume UI CDN -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/gh/Amrit-dev08/LumeUi/dist/lume.js"
+    ></script>
+  </body>
+</html>
