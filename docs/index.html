@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LumeUI Documentation</title>
+    <script
+      src="https://cdn.jsdelivr.net/gh/Amrit-dev08/LumeUi/dist/lume.js"
+      type="module"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
+
+      <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <h1>LumeUI Docs</h1>
+          <p class="sidebar-subtitle">Component Library</p>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link active" data-page="introduction"
+              >Introduction</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-page="getting-started"
+              >Getting Started</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-page="button">Button</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-page="navbar">Navbar</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-page="hero">Hero</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-page="article">Article</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-page="form">Form</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-page="footer">Footer</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-page="theming">Theming</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-page="events">Events</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-page="examples">Examples</a>
+          </li>
+        </ul>
+      </nav>
+
+      <main class="main-content">
+        <div class="content-container">
+          <div id="content-area">
+            <!-- Dynamic content will be loaded here -->
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
