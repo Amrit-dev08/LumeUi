@@ -1,4 +1,4 @@
-# LumeUI
+# LumeUI 
 
 A modern, lightweight web component library for building beautiful and interactive user interfaces.
 LumeUI provides a collection of customizable, framework-agnostic components that work seamlessly across all modern browsers.
@@ -11,6 +11,9 @@ LumeUI provides a collection of customizable, framework-agnostic components that
 - ⚡ **Lightweight** - No dependencies, vanilla JavaScript implementation
 - 🎯 **Framework Agnostic** - Works with any framework or vanilla HTML
 - 🌙 **Dark/Light Themes** - Built-in theme support
+
+## 🌐 Live Demo
+Check out the live website here: [Lume UI](https://lume-ui.netlify.app/)
 
 ## Installation
 
