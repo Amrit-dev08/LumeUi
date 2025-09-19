@@ -3,62 +3,6 @@
 A modern, lightweight web component library for building beautiful and interactive user interfaces.
 LumeUI provides a collection of customizable, framework-agnostic components that work seamlessly across all modern browsers.
 
-## Table of Contents
-
-- [Features](#features)
-- [Installation](#installation)
-- [Getting Started](#getting-started)
-- [Components](#components)
-  - [LumeButton](#lumebutton)
-    - [Basic Usage](#basic-usage)
-    - [Variants](#variants)
-    - [Sizes](#sizes)
-    - [States](#states)
-    - [Custom Styling](#custom-styling)
-    - [Event Handling](#button-event-handling)
-    - [Complete Attribute Reference](#complete-attribute-reference)
-  - [LumeNavbar](#lumenavbar)
-    - [Basic Usage](#navbar-basic-usage)
-    - [Variants](#navbar-variants)
-    - [Themes](#navbar-themes)
-    - [Logo Configuration](#logo-configuration)
-    - [Navigation Links](#navigation-links)
-    - [Mobile Configuration](#mobile-configuration)
-    - [Custom Styling](#navbar-custom-styling)
-    - [Complete Attribute Reference](#navbar-complete-attribute-reference)
-  - [LumeHero](#lumehero)
-    - [Basic Usage](#hero-basic-usage)
-    - [Themes](#hero-themes)
-    - [Background Options](#background-options)
-    - [Content Configuration](#content-configuration)
-    - [Button Configuration](#button-configuration)
-    - [Animation Options](#animation-options)
-    - [Complete Attribute Reference](#hero-complete-attribute-reference)
-  - [LumeArticle](#lumearticle)
-    - [Basic Usage](#article-basic-usage)
-    - [Layouts](#article-layouts)
-    - [Themes](#article-themes)
-    - [Image Configuration](#image-configuration)
-    - [Typography](#typography)
-    - [Complete Attribute Reference](#article-complete-attribute-reference)
-  - [LumeForm](#lumeform)
-    - [Basic Usage](#form-basic-usage)
-    - [Form Types](#form-types)
-    - [Layouts](#form-layouts)
-    - [Custom Fields](#custom-fields)
-    - [Styling Options](#styling-options)
-    - [Complete Attribute Reference](#form-complete-attribute-reference)
-  - [LumeFooter](#lumefooter)
-    - [Basic Usage](#footer-basic-usage)
-    - [Layouts](#footer-layouts)
-    - [Content Configuration](#content-configuration-1)
-    - [Social Icons](#social-icons)
-    - [Complete Attribute Reference](#footer-complete-attribute-reference)
-- [Event System](#event-system)
-- [Theming System](#theming-system)
-- [Browser Support](#browser-support)
-- [Complete Examples](#complete-examples)
-
 ## Features
 
 - 🎨 **Modern Design** - Beautiful, responsive components with contemporary styling
@@ -1548,7 +1492,7 @@ The footer supports popular social platforms with built-in SVG icons:
 #### Footer Complete Attribute Reference
 
 | Attribute          | Type        | Default                                 | Description                                     |
-| ------------------ | ----------- | --------------------------------------- | ----------------------------------------------- | --------- | --- | ---------------- |
+| ------------------ | ----------- | --------------------------------------- | ----------------------------------------------- |
 | `layout`           | String      | `"center"`                              | Footer layout (center, split, stacked, columns) |
 | `theme`            | String      | `"dark"`                                | Color theme (dark, light)                       |
 | `width`            | String      | `"100%"`                                | Footer width                                    |
@@ -1570,7 +1514,7 @@ The footer supports popular social platforms with built-in SVG icons:
 | `logo-alt`         | String      | Brand text                              | Logo alt text                                   |
 | `logo-width`       | String      | `"32px"`                                | Logo width                                      |
 | `logo-height`      | String      | `"32px"`                                | Logo height                                     |
-| `links`            | String      | `"Home                                  | #,About                                         | #,Contact | #"` | Navigation links |
+| `links`            | String      | `"Home\|#,About\|#,Contact\|#"`         | Navigation links                                |
 | `link-gap`         | String      | `"1.5rem"`                              | Gap between links                               |
 | `link-size`        | String      | `"0.875rem"`                            | Link font size                                  |
 | `social-icons`     | String      | `""`                                    | Social media links                              |
@@ -1581,8 +1525,6 @@ The footer supports popular social platforms with built-in SVG icons:
 | `copyright-text`   | String      | `"© 2025 LumeUI. All rights reserved."` | Copyright text                                  |
 | `copyright-color`  | String      | Text color                              | Copyright text color                            |
 | `copyright-size`   | String      | `"0.75rem"`                             | Copyright font size                             |
-
----
 
 ## Event System
 
@@ -2434,5 +2376,3 @@ lumeManager.updateComponent("lume-button", {
 ```
 
 **Made with ❤️ for the web development community**
-
-_LumeUI - Illuminating the web, one component at a time._
